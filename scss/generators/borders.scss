@@ -91,3 +91,68 @@
     @extend %border-#{$style};
   }
 }
+
+
+
+
+// Border radius
+@mixin borderRadius($radiusKey: 'default', $sideKey: 'default') {
+  $radiusValue: map-get($borderRadius, $radiusKey);
+  $sideValue: map-get($borderRadiusSides, $sideKey);
+  @if $sideKey == 'default' {
+    border-radius: #{$radiusValue};
+  } @else {
+    @if length($sideValue) > 1 {
+      @each $value in $sideValue {
+        border-#{$value}-radius: #{$radiusValue};
+      }
+    } @else {
+      border-#{$sideValue}-radius: #{$radiusValue};
+    }
+  }
+}
+
+// Border radius
+// .rounded{-side?}{-radius?}
+@each $radiusKey, $radiusValue in $borderRadius {
+  @if $radiusKey == 'default' {
+    %rounded {
+      @include borderRadius($radiusKey);
+    }
+    @if $generateClasses {
+      .rounded {
+        @extend %rounded;
+      }
+    }
+  } @else {
+    %rounded-#{$radiusKey} {
+      @include borderRadius($radiusKey);
+    }
+    @if $generateClasses {
+      .rounded-#{$radiusKey} {
+        @extend %rounded-#{$radiusKey};
+      }
+    }
+  }
+  @each $sideKey, $sideValue in $borderRadiusSides {
+    @if $radiusKey == 'default' {
+      %rounded-#{$sideKey} {
+        @include borderRadius($radiusKey, $sideKey);
+      }
+      @if $generateClasses {
+        .rounded-#{$sideKey} {
+          @extend %rounded-#{$sideKey};
+        }
+      }
+    } @else {
+      %rounded-#{$sideKey}-#{$radiusKey} {
+        @include borderRadius($radiusKey, $sideKey);
+      }
+      @if $generateClasses {
+        .rounded-#{$sideKey}-#{$radiusKey} {
+          @extend %rounded-#{$sideKey}-#{$radiusKey};
+        }
+      }
+    }
+  }
+}

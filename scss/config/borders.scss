@@ -31,9 +31,21 @@ $borderStyles: (
 
 // Class name: .rounded{-side?}{-size?}
 $borderRadius: (
+  'default': '.25rem',
   'none': '0',
   'sm': '.125rem',
-  default: '.25rem',
   'lg': '.5rem',
+  'xl': '1rem',
   'full': '9999px',
+);
+
+$borderRadiusSides: (
+  't': ('top-left', 'top-right'),
+  'r': ('top-right', 'bottom-right'),
+  'b': ('bottom-left', 'bottom-right'),
+  'l': ('top-left', 'bottom-right'),
+  'tl': 'top-left',
+  'tr': 'top-right',
+  'br': 'bottom-right',
+  'bl': 'bottom-left',
 );
