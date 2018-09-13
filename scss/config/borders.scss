@@ -24,6 +24,11 @@ $borderSides: (
 // Class name: .border-{color}
 $borderColors: $colors;
 
+// Class name: .border-{style}
+$borderStyles: (
+'solid', 'dashed', 'dotted', 'none'
+);
+
 // Class name: .rounded{-side?}{-size?}
 $borderRadius: (
   'none': '0',

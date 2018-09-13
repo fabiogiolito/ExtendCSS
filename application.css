@@ -4286,6 +4286,18 @@
 .border-pink-lightest {
   border-color: #ffebef; }
 
+.border-solid {
+  border-style: solid; }
+
+.border-dashed {
+  border-style: dashed; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-none {
+  border-style: none; }
+
 .includedButton {
   background-color: transparent;
   color: #2779bd;

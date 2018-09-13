@@ -2,7 +2,7 @@
   border: #{$borderDefault};
 }
 
-// .border{-side?}{-width?}
+// border classes
 @mixin border($widthKey: 'default', $sideKey: 'default') {
   $sideValue: map-get($borderSides, $sideKey);
   $widthValue: map-get($borderWidths, $widthKey);
@@ -19,11 +19,7 @@
   }
 }
 
-
-// .border-{width}
-// .border-{side}
-// .border-{side}-{width}
-
+// .border{-side?}{-width?}
 @each $widthKey, $widthValue in $borderWidths {
   @if $widthKey == 'default' {
     %border {
@@ -44,7 +40,6 @@
       }
     }
   }
-
   @each $sideKey, $sideValue in $borderSides {
     @if $widthKey == 'default' {
       %border-#{$sideKey} {
@@ -81,5 +76,18 @@
     .border-#{$key} {
       @extend %border-#{$key};
     }
+  }
+}
+
+// .border-{style}
+@mixin borderStyle($style) {
+  border-style: #{$style};
+}
+@each $style in $borderStyles {
+  %border-#{$style} {
+    @include borderStyle($style);
+  }
+  .border-#{$style} {
+    @extend %border-#{$style};
   }
 }
