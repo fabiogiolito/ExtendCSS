@@ -1,0 +1,29 @@
+// Class name: .z-{index}
+$zIndex: (
+  'auto': 'auto',
+  '0': 0,
+  '10': 10,
+  '20': 20,
+  '30': 30,
+  '40': 40,
+  '50': 50,
+);
+
+// Class name: .opacity-{name}
+$opacity: (
+ '0': '0',
+ '25': '.25',
+ '50': '.5',
+ '75': '.75',
+ '100': '1',
+);
+
+// Class name: .fill-{name}
+$svgFill: (
+  'current': 'currentColor',
+);
+
+// Class name: .stroke-{name}
+$svgStroke: (
+  'current': 'currentColor',
+);
