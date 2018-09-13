@@ -109,10 +109,10 @@
 .text-white {
   color: #ffffff; }
 
-.hover\:text-white:hover {
+.hover\:text-white:hover, .extendedButton:hover {
   color: #ffffff; }
 
-.active\:text-white:active {
+.active\:text-white:active, .extendedButton:active {
   color: #ffffff; }
 
 .focus\:text-white:focus {
@@ -562,7 +562,7 @@
 .focus\:text-blue-darker:focus {
   color: #1c3d5a; }
 
-.text-blue-dark {
+.text-blue-dark, .extendedButton {
   color: #2779bd; }
 
 .hover\:text-blue-dark:hover {
@@ -1969,7 +1969,7 @@
 
   .xl\:text-pink-lightest {
     color: #ffebef; } }
-.bg-transparent {
+.bg-transparent, .extendedButton {
   background-color: transparent; }
 
 .bg-black {
@@ -2332,7 +2332,7 @@
 .hover\:bg-blue-dark:hover {
   background-color: #2779bd; }
 
-.hover\:bg-blue:hover {
+.hover\:bg-blue:hover, .extendedButton:hover {
   background-color: #3490dc; }
 
 .hover\:bg-blue-light:hover {
@@ -2767,7 +2767,7 @@
 .active\:bg-blue-darker:active {
   background-color: #1c3d5a; }
 
-.active\:bg-blue-dark:active {
+.active\:bg-blue-dark:active, .extendedButton:active {
   background-color: #2779bd; }
 
 .active\:bg-blue:active {
@@ -3952,7 +3952,7 @@
 * {
   border: 0 solid #dae1e7; }
 
-.border {
+.border, .extendedButton {
   border-width: 1px; }
 
 .border-t {
@@ -4211,7 +4211,7 @@
 .border-blue-dark {
   border-color: #2779bd; }
 
-.border-blue {
+.border-blue, .extendedButton {
   border-color: #3490dc; }
 
 .border-blue-light {
@@ -4285,5 +4285,19 @@
 
 .border-pink-lightest {
   border-color: #ffebef; }
+
+.includedButton {
+  background-color: transparent;
+  color: #2779bd;
+  border-width: 1px;
+  border-color: #3490dc; }
+  .includedButton:hover {
+    background-color: #3490dc; }
+  .includedButton:hover {
+    color: #ffffff; }
+  .includedButton:active {
+    color: #ffffff; }
+  .includedButton:active {
+    background-color: #2779bd; }
 
 /*# sourceMappingURL=application.css.map */

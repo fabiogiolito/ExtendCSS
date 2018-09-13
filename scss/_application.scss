@@ -19,3 +19,44 @@ $generateClasses: true;
 // Generators
 @import 'generators/colors';
 @import 'generators/borders';
+
+
+
+// ======================================
+// Test @extend and @include
+
+.extendedButton {
+  @extend %bg-transparent;
+  @extend %hover\:bg-blue;
+  @extend %text-blue-dark;
+  // @extend %font-semibold;
+  @extend %hover\:text-white;
+  @extend %active\:text-white;
+  // @extend %py-2;
+  // @extend %px-4;
+  @extend %border;
+  @extend %border-blue;
+  // @extend %hover\:border-transparent;
+  // @extend %rounded;
+  // @extend %focus\:outline-none;
+  // @extend %focus\:shadow-outline;
+  @extend %active\:bg-blue-dark;
+}
+
+.includedButton {
+  @include backgroundColor('transparent');
+  @include hoverBackgroundColor('blue');
+  @include textColor('blue-dark');
+  // @include .font-semibold;
+  @include textColor('white', 'hover');
+  @include textColor('white', 'active');
+  // @include .py-2;
+  // @include .px-4;
+  @include border;
+  @include borderColor('blue');
+  // @include .hover\:border-transparent;
+  // @include .rounded;
+  // @include .focus\:outline-none;
+  // @include .focus\:shadow-outline;
+  @include activeBackgroundColor('blue-dark');
+}
