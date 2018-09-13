@@ -7,9 +7,8 @@
   }
 }
 
+// Class name .bg-{color}
 @each $key, $value in $backgroundColors {
-
-  // Class name .bg-{color}
   %bg-#{$key} {
     @include backgroundColor($key)
   }
@@ -18,16 +17,17 @@
       @extend %bg-#{$key};
     }
   }
+}
 
-
-  // Class name .{variant}:text-{$color}
-  @each $variant in $backgroundColorVariants {
-    %#{$variant}\:bg-#{$key} {
-      @include backgroundColor($key, $variant);
+// Class name .{variant}:text-{$color}
+@each $variant in $backgroundColorVariants {
+  @each $colorKey, $colorValue in $backgroundColors {
+    %#{$variant}\:bg-#{$colorKey} {
+      @include backgroundColor($colorKey, $variant);
     }
     @if $generateClasses {
-      .#{$variant}\:bg-#{$key} {
-        @extend %#{$variant}\:bg-#{$key};
+      .#{$variant}\:bg-#{$colorKey} {
+        @extend %#{$variant}\:bg-#{$colorKey};
       }
     }
   }
