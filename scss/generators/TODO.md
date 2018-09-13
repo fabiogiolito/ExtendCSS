@@ -5,7 +5,6 @@
 High
 
 - State variants border-color `.{variant}:border-color`
-- Responsive border-color `.{screen}:border-{color}`
 
 Low
 

@@ -63,6 +63,10 @@
   }
 }
 
+
+// ================================
+
+
 // .border-{color}
 @mixin borderColor($key) {
   $value: map-get($borderColors, $key);
@@ -79,6 +83,27 @@
   }
 }
 
+// Responsive border color
+// @media {screen}
+// Class name .{screen}:border-{color}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $colorKey, $colorValue in $responsiveBorderColors {
+      %#{$screenKey}\:border-#{$colorKey} {
+        @include borderColor($colorKey);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:border-#{$colorKey} {
+          @extend %#{$screenKey}\:border-#{$colorKey};
+        }
+      }
+    }
+  }
+}
+
+
+// ================================
+
 // .border-{style}
 @mixin borderStyle($style) {
   border-style: #{$style};
@@ -93,7 +118,7 @@
 }
 
 
-
+// ================================
 
 // Border radius
 @mixin borderRadius($radiusKey: 'default', $sideKey: 'default') {

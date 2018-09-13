@@ -24,6 +24,10 @@ $borderSides: (
 // Class name: .border-{color}
 $borderColors: $colors;
 
+// Class name: .{screen}:border-{color}
+$responsiveBorderColors: $borderColors;
+
+
 // Class name: .border-{style}
 $borderStyles: (
 'solid', 'dashed', 'dotted', 'none'
