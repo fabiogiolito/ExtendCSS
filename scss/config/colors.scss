@@ -102,21 +102,20 @@ $textColors: $colors;
 
 
 // ========================================================
-// Text color variants
+// State variants text color
 // Class names:
 //    .hover:text-{color}
 //    .focus:text-{color}
 //    .active:text-{color}
-//    .group-hover:text-{color}
-// Default: $textColors
-// Customize: define new list of colors
+// Customize: remove from list unwanted variants
 // Disable: set equal to ();
-$hoverTextColors: $textColors;
-$focusTextColors: $textColors;
-$activeTextColors: $textColors;
+$textColorVariants: ('hover', 'active', 'focus');
+
+
+// Group hover text color
+// .group:hover .group-hover:text-{color}
 $groupHoverTextColors: $textColors;
 
-$textColorVariants: ('hover', 'active', 'focus');
 
 
 // ========================================================
@@ -138,19 +137,19 @@ $responsiveTextColors: $textColors;
 $backgroundColors: $colors;
 
 
+
 // ========================================================
-// Background color variants
+// State variants background color
 // Class names:
 //    .hover:bg-{color}
 //    .focus:bg-{color}
 //    .active:bg-{color}
-//    .group-hover:bg-{color}
-// Default: $backgroundColors
-// Customize: define new list of colors
+// Customize: remove from list unwanted variants
 // Disable: set equal to ();
-$hoverBackgroundColors: $backgroundColors;
-$focusBackgroundColors: $backgroundColors;
-$activeBackgroundColors: $backgroundColors;
+$backgroundColorVariants: ('hover', 'active', 'focus');
+
+// Group hover background color
+// .group:hover .group-hover:bg-{color}
 $groupHoverBackgroundColors: $backgroundColors;
 
 

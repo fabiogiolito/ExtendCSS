@@ -17,7 +17,9 @@ $generateClasses: true;
 @import 'config/misc';
 
 // Generators
-@import 'generators/colors';
+@import 'generators/textColor';
+@import 'generators/backgroundColor';
+@import 'generators/backgroundSize';
 @import 'generators/borders';
 
 
@@ -45,7 +47,7 @@ $generateClasses: true;
 
 .includedButton {
   @include backgroundColor('transparent');
-  @include hoverBackgroundColor('blue');
+  @include backgroundColor('blue', 'hover');
   @include textColor('blue-dark');
   // @include .font-semibold;
   @include textColor('white', 'hover');
@@ -58,5 +60,5 @@ $generateClasses: true;
   // @include .rounded;
   // @include .focus\:outline-none;
   // @include .focus\:shadow-outline;
-  @include activeBackgroundColor('blue-dark');
+  @include backgroundColor('blue-dark', 'active');
 }

@@ -1972,877 +1972,877 @@
 .bg-transparent, .extendedButton {
   background-color: transparent; }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent; }
+
+.active\:bg-transparent:active {
+  background-color: transparent; }
+
+.focus\:bg-transparent:focus {
+  background-color: transparent; }
+
 .bg-black {
+  background-color: #22292f; }
+
+.hover\:bg-black:hover {
+  background-color: #22292f; }
+
+.active\:bg-black:active {
+  background-color: #22292f; }
+
+.focus\:bg-black:focus {
   background-color: #22292f; }
 
 .bg-grey-darkest {
   background-color: #3d4852; }
 
+.hover\:bg-grey-darkest:hover {
+  background-color: #3d4852; }
+
+.active\:bg-grey-darkest:active {
+  background-color: #3d4852; }
+
+.focus\:bg-grey-darkest:focus {
+  background-color: #3d4852; }
+
 .bg-grey-darker {
+  background-color: #606f7b; }
+
+.hover\:bg-grey-darker:hover {
+  background-color: #606f7b; }
+
+.active\:bg-grey-darker:active {
+  background-color: #606f7b; }
+
+.focus\:bg-grey-darker:focus {
   background-color: #606f7b; }
 
 .bg-grey-dark {
   background-color: #8795a1; }
 
+.hover\:bg-grey-dark:hover {
+  background-color: #8795a1; }
+
+.active\:bg-grey-dark:active {
+  background-color: #8795a1; }
+
+.focus\:bg-grey-dark:focus {
+  background-color: #8795a1; }
+
 .bg-grey {
+  background-color: #b8c2cc; }
+
+.hover\:bg-grey:hover {
+  background-color: #b8c2cc; }
+
+.active\:bg-grey:active {
+  background-color: #b8c2cc; }
+
+.focus\:bg-grey:focus {
   background-color: #b8c2cc; }
 
 .bg-grey-light {
   background-color: #dae1e7; }
 
+.hover\:bg-grey-light:hover {
+  background-color: #dae1e7; }
+
+.active\:bg-grey-light:active {
+  background-color: #dae1e7; }
+
+.focus\:bg-grey-light:focus {
+  background-color: #dae1e7; }
+
 .bg-grey-lighter {
+  background-color: #f1f5f8; }
+
+.hover\:bg-grey-lighter:hover {
+  background-color: #f1f5f8; }
+
+.active\:bg-grey-lighter:active {
+  background-color: #f1f5f8; }
+
+.focus\:bg-grey-lighter:focus {
   background-color: #f1f5f8; }
 
 .bg-grey-lightest {
   background-color: #f8fafc; }
 
+.hover\:bg-grey-lightest:hover {
+  background-color: #f8fafc; }
+
+.active\:bg-grey-lightest:active {
+  background-color: #f8fafc; }
+
+.focus\:bg-grey-lightest:focus {
+  background-color: #f8fafc; }
+
 .bg-white {
+  background-color: #ffffff; }
+
+.hover\:bg-white:hover {
+  background-color: #ffffff; }
+
+.active\:bg-white:active {
+  background-color: #ffffff; }
+
+.focus\:bg-white:focus {
   background-color: #ffffff; }
 
 .bg-red-darkest {
   background-color: #3b0d0c; }
 
+.hover\:bg-red-darkest:hover {
+  background-color: #3b0d0c; }
+
+.active\:bg-red-darkest:active {
+  background-color: #3b0d0c; }
+
+.focus\:bg-red-darkest:focus {
+  background-color: #3b0d0c; }
+
 .bg-red-darker {
+  background-color: #621b18; }
+
+.hover\:bg-red-darker:hover {
+  background-color: #621b18; }
+
+.active\:bg-red-darker:active {
+  background-color: #621b18; }
+
+.focus\:bg-red-darker:focus {
   background-color: #621b18; }
 
 .bg-red-dark {
   background-color: #cc1f1a; }
 
+.hover\:bg-red-dark:hover {
+  background-color: #cc1f1a; }
+
+.active\:bg-red-dark:active {
+  background-color: #cc1f1a; }
+
+.focus\:bg-red-dark:focus {
+  background-color: #cc1f1a; }
+
 .bg-red {
+  background-color: #e3342f; }
+
+.hover\:bg-red:hover {
+  background-color: #e3342f; }
+
+.active\:bg-red:active {
+  background-color: #e3342f; }
+
+.focus\:bg-red:focus {
   background-color: #e3342f; }
 
 .bg-red-light {
   background-color: #ef5753; }
 
+.hover\:bg-red-light:hover {
+  background-color: #ef5753; }
+
+.active\:bg-red-light:active {
+  background-color: #ef5753; }
+
+.focus\:bg-red-light:focus {
+  background-color: #ef5753; }
+
 .bg-red-lighter {
+  background-color: #f9acaa; }
+
+.hover\:bg-red-lighter:hover {
+  background-color: #f9acaa; }
+
+.active\:bg-red-lighter:active {
+  background-color: #f9acaa; }
+
+.focus\:bg-red-lighter:focus {
   background-color: #f9acaa; }
 
 .bg-red-lightest {
   background-color: #fcebea; }
 
+.hover\:bg-red-lightest:hover {
+  background-color: #fcebea; }
+
+.active\:bg-red-lightest:active {
+  background-color: #fcebea; }
+
+.focus\:bg-red-lightest:focus {
+  background-color: #fcebea; }
+
 .bg-orange-darkest {
+  background-color: #462a16; }
+
+.hover\:bg-orange-darkest:hover {
+  background-color: #462a16; }
+
+.active\:bg-orange-darkest:active {
+  background-color: #462a16; }
+
+.focus\:bg-orange-darkest:focus {
   background-color: #462a16; }
 
 .bg-orange-darker {
   background-color: #613b1f; }
 
+.hover\:bg-orange-darker:hover {
+  background-color: #613b1f; }
+
+.active\:bg-orange-darker:active {
+  background-color: #613b1f; }
+
+.focus\:bg-orange-darker:focus {
+  background-color: #613b1f; }
+
 .bg-orange-dark {
+  background-color: #de751f; }
+
+.hover\:bg-orange-dark:hover {
+  background-color: #de751f; }
+
+.active\:bg-orange-dark:active {
+  background-color: #de751f; }
+
+.focus\:bg-orange-dark:focus {
   background-color: #de751f; }
 
 .bg-orange {
   background-color: #f6993f; }
 
+.hover\:bg-orange:hover {
+  background-color: #f6993f; }
+
+.active\:bg-orange:active {
+  background-color: #f6993f; }
+
+.focus\:bg-orange:focus {
+  background-color: #f6993f; }
+
 .bg-orange-light {
+  background-color: #faad63; }
+
+.hover\:bg-orange-light:hover {
+  background-color: #faad63; }
+
+.active\:bg-orange-light:active {
+  background-color: #faad63; }
+
+.focus\:bg-orange-light:focus {
   background-color: #faad63; }
 
 .bg-orange-lighter {
   background-color: #fcd9b6; }
 
+.hover\:bg-orange-lighter:hover {
+  background-color: #fcd9b6; }
+
+.active\:bg-orange-lighter:active {
+  background-color: #fcd9b6; }
+
+.focus\:bg-orange-lighter:focus {
+  background-color: #fcd9b6; }
+
 .bg-orange-lightest {
+  background-color: #fff5eb; }
+
+.hover\:bg-orange-lightest:hover {
+  background-color: #fff5eb; }
+
+.active\:bg-orange-lightest:active {
+  background-color: #fff5eb; }
+
+.focus\:bg-orange-lightest:focus {
   background-color: #fff5eb; }
 
 .bg-yellow-darkest {
   background-color: #453411; }
 
+.hover\:bg-yellow-darkest:hover {
+  background-color: #453411; }
+
+.active\:bg-yellow-darkest:active {
+  background-color: #453411; }
+
+.focus\:bg-yellow-darkest:focus {
+  background-color: #453411; }
+
 .bg-yellow-darker {
+  background-color: #684f1d; }
+
+.hover\:bg-yellow-darker:hover {
+  background-color: #684f1d; }
+
+.active\:bg-yellow-darker:active {
+  background-color: #684f1d; }
+
+.focus\:bg-yellow-darker:focus {
   background-color: #684f1d; }
 
 .bg-yellow-dark {
   background-color: #f2d024; }
 
+.hover\:bg-yellow-dark:hover {
+  background-color: #f2d024; }
+
+.active\:bg-yellow-dark:active {
+  background-color: #f2d024; }
+
+.focus\:bg-yellow-dark:focus {
+  background-color: #f2d024; }
+
 .bg-yellow {
+  background-color: #ffed4a; }
+
+.hover\:bg-yellow:hover {
+  background-color: #ffed4a; }
+
+.active\:bg-yellow:active {
+  background-color: #ffed4a; }
+
+.focus\:bg-yellow:focus {
   background-color: #ffed4a; }
 
 .bg-yellow-light {
   background-color: #fff382; }
 
+.hover\:bg-yellow-light:hover {
+  background-color: #fff382; }
+
+.active\:bg-yellow-light:active {
+  background-color: #fff382; }
+
+.focus\:bg-yellow-light:focus {
+  background-color: #fff382; }
+
 .bg-yellow-lighter {
+  background-color: #fff9c2; }
+
+.hover\:bg-yellow-lighter:hover {
+  background-color: #fff9c2; }
+
+.active\:bg-yellow-lighter:active {
+  background-color: #fff9c2; }
+
+.focus\:bg-yellow-lighter:focus {
   background-color: #fff9c2; }
 
 .bg-yellow-lightest {
   background-color: #fcfbeb; }
 
+.hover\:bg-yellow-lightest:hover {
+  background-color: #fcfbeb; }
+
+.active\:bg-yellow-lightest:active {
+  background-color: #fcfbeb; }
+
+.focus\:bg-yellow-lightest:focus {
+  background-color: #fcfbeb; }
+
 .bg-green-darkest {
+  background-color: #0f2f21; }
+
+.hover\:bg-green-darkest:hover {
+  background-color: #0f2f21; }
+
+.active\:bg-green-darkest:active {
+  background-color: #0f2f21; }
+
+.focus\:bg-green-darkest:focus {
   background-color: #0f2f21; }
 
 .bg-green-darker {
   background-color: #1a4731; }
 
+.hover\:bg-green-darker:hover {
+  background-color: #1a4731; }
+
+.active\:bg-green-darker:active {
+  background-color: #1a4731; }
+
+.focus\:bg-green-darker:focus {
+  background-color: #1a4731; }
+
 .bg-green-dark {
+  background-color: #1f9d55; }
+
+.hover\:bg-green-dark:hover {
+  background-color: #1f9d55; }
+
+.active\:bg-green-dark:active {
+  background-color: #1f9d55; }
+
+.focus\:bg-green-dark:focus {
   background-color: #1f9d55; }
 
 .bg-green {
   background-color: #38c172; }
 
+.hover\:bg-green:hover {
+  background-color: #38c172; }
+
+.active\:bg-green:active {
+  background-color: #38c172; }
+
+.focus\:bg-green:focus {
+  background-color: #38c172; }
+
 .bg-green-light {
+  background-color: #51d88a; }
+
+.hover\:bg-green-light:hover {
+  background-color: #51d88a; }
+
+.active\:bg-green-light:active {
+  background-color: #51d88a; }
+
+.focus\:bg-green-light:focus {
   background-color: #51d88a; }
 
 .bg-green-lighter {
   background-color: #a2f5bf; }
 
+.hover\:bg-green-lighter:hover {
+  background-color: #a2f5bf; }
+
+.active\:bg-green-lighter:active {
+  background-color: #a2f5bf; }
+
+.focus\:bg-green-lighter:focus {
+  background-color: #a2f5bf; }
+
 .bg-green-lightest {
+  background-color: #e3fcec; }
+
+.hover\:bg-green-lightest:hover {
+  background-color: #e3fcec; }
+
+.active\:bg-green-lightest:active {
+  background-color: #e3fcec; }
+
+.focus\:bg-green-lightest:focus {
   background-color: #e3fcec; }
 
 .bg-teal-darkest {
   background-color: #0d3331; }
 
+.hover\:bg-teal-darkest:hover {
+  background-color: #0d3331; }
+
+.active\:bg-teal-darkest:active {
+  background-color: #0d3331; }
+
+.focus\:bg-teal-darkest:focus {
+  background-color: #0d3331; }
+
 .bg-teal-darker {
+  background-color: #20504f; }
+
+.hover\:bg-teal-darker:hover {
+  background-color: #20504f; }
+
+.active\:bg-teal-darker:active {
+  background-color: #20504f; }
+
+.focus\:bg-teal-darker:focus {
   background-color: #20504f; }
 
 .bg-teal-dark {
   background-color: #38a89d; }
 
+.hover\:bg-teal-dark:hover {
+  background-color: #38a89d; }
+
+.active\:bg-teal-dark:active {
+  background-color: #38a89d; }
+
+.focus\:bg-teal-dark:focus {
+  background-color: #38a89d; }
+
 .bg-teal {
+  background-color: #4dc0b5; }
+
+.hover\:bg-teal:hover {
+  background-color: #4dc0b5; }
+
+.active\:bg-teal:active {
+  background-color: #4dc0b5; }
+
+.focus\:bg-teal:focus {
   background-color: #4dc0b5; }
 
 .bg-teal-light {
   background-color: #64d5ca; }
 
+.hover\:bg-teal-light:hover {
+  background-color: #64d5ca; }
+
+.active\:bg-teal-light:active {
+  background-color: #64d5ca; }
+
+.focus\:bg-teal-light:focus {
+  background-color: #64d5ca; }
+
 .bg-teal-lighter {
+  background-color: #a0f0ed; }
+
+.hover\:bg-teal-lighter:hover {
+  background-color: #a0f0ed; }
+
+.active\:bg-teal-lighter:active {
+  background-color: #a0f0ed; }
+
+.focus\:bg-teal-lighter:focus {
   background-color: #a0f0ed; }
 
 .bg-teal-lightest {
   background-color: #e8fffe; }
 
+.hover\:bg-teal-lightest:hover {
+  background-color: #e8fffe; }
+
+.active\:bg-teal-lightest:active {
+  background-color: #e8fffe; }
+
+.focus\:bg-teal-lightest:focus {
+  background-color: #e8fffe; }
+
 .bg-blue-darkest {
+  background-color: #12283a; }
+
+.hover\:bg-blue-darkest:hover {
+  background-color: #12283a; }
+
+.active\:bg-blue-darkest:active {
+  background-color: #12283a; }
+
+.focus\:bg-blue-darkest:focus {
   background-color: #12283a; }
 
 .bg-blue-darker {
   background-color: #1c3d5a; }
 
+.hover\:bg-blue-darker:hover {
+  background-color: #1c3d5a; }
+
+.active\:bg-blue-darker:active {
+  background-color: #1c3d5a; }
+
+.focus\:bg-blue-darker:focus {
+  background-color: #1c3d5a; }
+
 .bg-blue-dark {
+  background-color: #2779bd; }
+
+.hover\:bg-blue-dark:hover {
+  background-color: #2779bd; }
+
+.active\:bg-blue-dark:active, .extendedButton:active {
+  background-color: #2779bd; }
+
+.focus\:bg-blue-dark:focus {
   background-color: #2779bd; }
 
 .bg-blue {
   background-color: #3490dc; }
 
+.hover\:bg-blue:hover, .extendedButton:hover {
+  background-color: #3490dc; }
+
+.active\:bg-blue:active {
+  background-color: #3490dc; }
+
+.focus\:bg-blue:focus {
+  background-color: #3490dc; }
+
 .bg-blue-light {
+  background-color: #6cb2eb; }
+
+.hover\:bg-blue-light:hover {
+  background-color: #6cb2eb; }
+
+.active\:bg-blue-light:active {
+  background-color: #6cb2eb; }
+
+.focus\:bg-blue-light:focus {
   background-color: #6cb2eb; }
 
 .bg-blue-lighter {
   background-color: #bcdefa; }
 
+.hover\:bg-blue-lighter:hover {
+  background-color: #bcdefa; }
+
+.active\:bg-blue-lighter:active {
+  background-color: #bcdefa; }
+
+.focus\:bg-blue-lighter:focus {
+  background-color: #bcdefa; }
+
 .bg-blue-lightest {
+  background-color: #eff8ff; }
+
+.hover\:bg-blue-lightest:hover {
+  background-color: #eff8ff; }
+
+.active\:bg-blue-lightest:active {
+  background-color: #eff8ff; }
+
+.focus\:bg-blue-lightest:focus {
   background-color: #eff8ff; }
 
 .bg-indigo-darkest {
   background-color: #191e38; }
 
+.hover\:bg-indigo-darkest:hover {
+  background-color: #191e38; }
+
+.active\:bg-indigo-darkest:active {
+  background-color: #191e38; }
+
+.focus\:bg-indigo-darkest:focus {
+  background-color: #191e38; }
+
 .bg-indigo-darker {
+  background-color: #2f365f; }
+
+.hover\:bg-indigo-darker:hover {
+  background-color: #2f365f; }
+
+.active\:bg-indigo-darker:active {
+  background-color: #2f365f; }
+
+.focus\:bg-indigo-darker:focus {
   background-color: #2f365f; }
 
 .bg-indigo-dark {
   background-color: #5661b3; }
 
+.hover\:bg-indigo-dark:hover {
+  background-color: #5661b3; }
+
+.active\:bg-indigo-dark:active {
+  background-color: #5661b3; }
+
+.focus\:bg-indigo-dark:focus {
+  background-color: #5661b3; }
+
 .bg-indigo {
+  background-color: #6574cd; }
+
+.hover\:bg-indigo:hover {
+  background-color: #6574cd; }
+
+.active\:bg-indigo:active {
+  background-color: #6574cd; }
+
+.focus\:bg-indigo:focus {
   background-color: #6574cd; }
 
 .bg-indigo-light {
   background-color: #7886d7; }
 
+.hover\:bg-indigo-light:hover {
+  background-color: #7886d7; }
+
+.active\:bg-indigo-light:active {
+  background-color: #7886d7; }
+
+.focus\:bg-indigo-light:focus {
+  background-color: #7886d7; }
+
 .bg-indigo-lighter {
+  background-color: #b2b7ff; }
+
+.hover\:bg-indigo-lighter:hover {
+  background-color: #b2b7ff; }
+
+.active\:bg-indigo-lighter:active {
+  background-color: #b2b7ff; }
+
+.focus\:bg-indigo-lighter:focus {
   background-color: #b2b7ff; }
 
 .bg-indigo-lightest {
   background-color: #e6e8ff; }
 
+.hover\:bg-indigo-lightest:hover {
+  background-color: #e6e8ff; }
+
+.active\:bg-indigo-lightest:active {
+  background-color: #e6e8ff; }
+
+.focus\:bg-indigo-lightest:focus {
+  background-color: #e6e8ff; }
+
 .bg-purple-darkest {
+  background-color: #21183c; }
+
+.hover\:bg-purple-darkest:hover {
+  background-color: #21183c; }
+
+.active\:bg-purple-darkest:active {
+  background-color: #21183c; }
+
+.focus\:bg-purple-darkest:focus {
   background-color: #21183c; }
 
 .bg-purple-darker {
   background-color: #382b5f; }
 
+.hover\:bg-purple-darker:hover {
+  background-color: #382b5f; }
+
+.active\:bg-purple-darker:active {
+  background-color: #382b5f; }
+
+.focus\:bg-purple-darker:focus {
+  background-color: #382b5f; }
+
 .bg-purple-dark {
+  background-color: #794acf; }
+
+.hover\:bg-purple-dark:hover {
+  background-color: #794acf; }
+
+.active\:bg-purple-dark:active {
+  background-color: #794acf; }
+
+.focus\:bg-purple-dark:focus {
   background-color: #794acf; }
 
 .bg-purple {
   background-color: #9561e2; }
 
+.hover\:bg-purple:hover {
+  background-color: #9561e2; }
+
+.active\:bg-purple:active {
+  background-color: #9561e2; }
+
+.focus\:bg-purple:focus {
+  background-color: #9561e2; }
+
 .bg-purple-light {
+  background-color: #a779e9; }
+
+.hover\:bg-purple-light:hover {
+  background-color: #a779e9; }
+
+.active\:bg-purple-light:active {
+  background-color: #a779e9; }
+
+.focus\:bg-purple-light:focus {
   background-color: #a779e9; }
 
 .bg-purple-lighter {
   background-color: #d6bbfc; }
 
+.hover\:bg-purple-lighter:hover {
+  background-color: #d6bbfc; }
+
+.active\:bg-purple-lighter:active {
+  background-color: #d6bbfc; }
+
+.focus\:bg-purple-lighter:focus {
+  background-color: #d6bbfc; }
+
 .bg-purple-lightest {
+  background-color: #f3ebff; }
+
+.hover\:bg-purple-lightest:hover {
+  background-color: #f3ebff; }
+
+.active\:bg-purple-lightest:active {
+  background-color: #f3ebff; }
+
+.focus\:bg-purple-lightest:focus {
   background-color: #f3ebff; }
 
 .bg-pink-darkest {
   background-color: #451225; }
 
+.hover\:bg-pink-darkest:hover {
+  background-color: #451225; }
+
+.active\:bg-pink-darkest:active {
+  background-color: #451225; }
+
+.focus\:bg-pink-darkest:focus {
+  background-color: #451225; }
+
 .bg-pink-darker {
+  background-color: #6f213f; }
+
+.hover\:bg-pink-darker:hover {
+  background-color: #6f213f; }
+
+.active\:bg-pink-darker:active {
+  background-color: #6f213f; }
+
+.focus\:bg-pink-darker:focus {
   background-color: #6f213f; }
 
 .bg-pink-dark {
   background-color: #eb5286; }
 
+.hover\:bg-pink-dark:hover {
+  background-color: #eb5286; }
+
+.active\:bg-pink-dark:active {
+  background-color: #eb5286; }
+
+.focus\:bg-pink-dark:focus {
+  background-color: #eb5286; }
+
 .bg-pink {
+  background-color: #f66d9b; }
+
+.hover\:bg-pink:hover {
+  background-color: #f66d9b; }
+
+.active\:bg-pink:active {
+  background-color: #f66d9b; }
+
+.focus\:bg-pink:focus {
   background-color: #f66d9b; }
 
 .bg-pink-light {
   background-color: #fa7ea8; }
 
+.hover\:bg-pink-light:hover {
+  background-color: #fa7ea8; }
+
+.active\:bg-pink-light:active {
+  background-color: #fa7ea8; }
+
+.focus\:bg-pink-light:focus {
+  background-color: #fa7ea8; }
+
 .bg-pink-lighter {
+  background-color: #ffbbca; }
+
+.hover\:bg-pink-lighter:hover {
+  background-color: #ffbbca; }
+
+.active\:bg-pink-lighter:active {
+  background-color: #ffbbca; }
+
+.focus\:bg-pink-lighter:focus {
   background-color: #ffbbca; }
 
 .bg-pink-lightest {
   background-color: #ffebef; }
 
-.hover\:bg-transparent:hover {
-  background-color: transparent; }
-
-.hover\:bg-black:hover {
-  background-color: #22292f; }
-
-.hover\:bg-grey-darkest:hover {
-  background-color: #3d4852; }
-
-.hover\:bg-grey-darker:hover {
-  background-color: #606f7b; }
-
-.hover\:bg-grey-dark:hover {
-  background-color: #8795a1; }
-
-.hover\:bg-grey:hover {
-  background-color: #b8c2cc; }
-
-.hover\:bg-grey-light:hover {
-  background-color: #dae1e7; }
-
-.hover\:bg-grey-lighter:hover {
-  background-color: #f1f5f8; }
-
-.hover\:bg-grey-lightest:hover {
-  background-color: #f8fafc; }
-
-.hover\:bg-white:hover {
-  background-color: #ffffff; }
-
-.hover\:bg-red-darkest:hover {
-  background-color: #3b0d0c; }
-
-.hover\:bg-red-darker:hover {
-  background-color: #621b18; }
-
-.hover\:bg-red-dark:hover {
-  background-color: #cc1f1a; }
-
-.hover\:bg-red:hover {
-  background-color: #e3342f; }
-
-.hover\:bg-red-light:hover {
-  background-color: #ef5753; }
-
-.hover\:bg-red-lighter:hover {
-  background-color: #f9acaa; }
-
-.hover\:bg-red-lightest:hover {
-  background-color: #fcebea; }
-
-.hover\:bg-orange-darkest:hover {
-  background-color: #462a16; }
-
-.hover\:bg-orange-darker:hover {
-  background-color: #613b1f; }
-
-.hover\:bg-orange-dark:hover {
-  background-color: #de751f; }
-
-.hover\:bg-orange:hover {
-  background-color: #f6993f; }
-
-.hover\:bg-orange-light:hover {
-  background-color: #faad63; }
-
-.hover\:bg-orange-lighter:hover {
-  background-color: #fcd9b6; }
-
-.hover\:bg-orange-lightest:hover {
-  background-color: #fff5eb; }
-
-.hover\:bg-yellow-darkest:hover {
-  background-color: #453411; }
-
-.hover\:bg-yellow-darker:hover {
-  background-color: #684f1d; }
-
-.hover\:bg-yellow-dark:hover {
-  background-color: #f2d024; }
-
-.hover\:bg-yellow:hover {
-  background-color: #ffed4a; }
-
-.hover\:bg-yellow-light:hover {
-  background-color: #fff382; }
-
-.hover\:bg-yellow-lighter:hover {
-  background-color: #fff9c2; }
-
-.hover\:bg-yellow-lightest:hover {
-  background-color: #fcfbeb; }
-
-.hover\:bg-green-darkest:hover {
-  background-color: #0f2f21; }
-
-.hover\:bg-green-darker:hover {
-  background-color: #1a4731; }
-
-.hover\:bg-green-dark:hover {
-  background-color: #1f9d55; }
-
-.hover\:bg-green:hover {
-  background-color: #38c172; }
-
-.hover\:bg-green-light:hover {
-  background-color: #51d88a; }
-
-.hover\:bg-green-lighter:hover {
-  background-color: #a2f5bf; }
-
-.hover\:bg-green-lightest:hover {
-  background-color: #e3fcec; }
-
-.hover\:bg-teal-darkest:hover {
-  background-color: #0d3331; }
-
-.hover\:bg-teal-darker:hover {
-  background-color: #20504f; }
-
-.hover\:bg-teal-dark:hover {
-  background-color: #38a89d; }
-
-.hover\:bg-teal:hover {
-  background-color: #4dc0b5; }
-
-.hover\:bg-teal-light:hover {
-  background-color: #64d5ca; }
-
-.hover\:bg-teal-lighter:hover {
-  background-color: #a0f0ed; }
-
-.hover\:bg-teal-lightest:hover {
-  background-color: #e8fffe; }
-
-.hover\:bg-blue-darkest:hover {
-  background-color: #12283a; }
-
-.hover\:bg-blue-darker:hover {
-  background-color: #1c3d5a; }
-
-.hover\:bg-blue-dark:hover {
-  background-color: #2779bd; }
-
-.hover\:bg-blue:hover, .extendedButton:hover {
-  background-color: #3490dc; }
-
-.hover\:bg-blue-light:hover {
-  background-color: #6cb2eb; }
-
-.hover\:bg-blue-lighter:hover {
-  background-color: #bcdefa; }
-
-.hover\:bg-blue-lightest:hover {
-  background-color: #eff8ff; }
-
-.hover\:bg-indigo-darkest:hover {
-  background-color: #191e38; }
-
-.hover\:bg-indigo-darker:hover {
-  background-color: #2f365f; }
-
-.hover\:bg-indigo-dark:hover {
-  background-color: #5661b3; }
-
-.hover\:bg-indigo:hover {
-  background-color: #6574cd; }
-
-.hover\:bg-indigo-light:hover {
-  background-color: #7886d7; }
-
-.hover\:bg-indigo-lighter:hover {
-  background-color: #b2b7ff; }
-
-.hover\:bg-indigo-lightest:hover {
-  background-color: #e6e8ff; }
-
-.hover\:bg-purple-darkest:hover {
-  background-color: #21183c; }
-
-.hover\:bg-purple-darker:hover {
-  background-color: #382b5f; }
-
-.hover\:bg-purple-dark:hover {
-  background-color: #794acf; }
-
-.hover\:bg-purple:hover {
-  background-color: #9561e2; }
-
-.hover\:bg-purple-light:hover {
-  background-color: #a779e9; }
-
-.hover\:bg-purple-lighter:hover {
-  background-color: #d6bbfc; }
-
-.hover\:bg-purple-lightest:hover {
-  background-color: #f3ebff; }
-
-.hover\:bg-pink-darkest:hover {
-  background-color: #451225; }
-
-.hover\:bg-pink-darker:hover {
-  background-color: #6f213f; }
-
-.hover\:bg-pink-dark:hover {
-  background-color: #eb5286; }
-
-.hover\:bg-pink:hover {
-  background-color: #f66d9b; }
-
-.hover\:bg-pink-light:hover {
-  background-color: #fa7ea8; }
-
-.hover\:bg-pink-lighter:hover {
-  background-color: #ffbbca; }
-
 .hover\:bg-pink-lightest:hover {
   background-color: #ffebef; }
 
-.focus\:bg-transparent:focus {
-  background-color: transparent; }
-
-.focus\:bg-black:focus {
-  background-color: #22292f; }
-
-.focus\:bg-grey-darkest:focus {
-  background-color: #3d4852; }
-
-.focus\:bg-grey-darker:focus {
-  background-color: #606f7b; }
-
-.focus\:bg-grey-dark:focus {
-  background-color: #8795a1; }
-
-.focus\:bg-grey:focus {
-  background-color: #b8c2cc; }
-
-.focus\:bg-grey-light:focus {
-  background-color: #dae1e7; }
-
-.focus\:bg-grey-lighter:focus {
-  background-color: #f1f5f8; }
-
-.focus\:bg-grey-lightest:focus {
-  background-color: #f8fafc; }
-
-.focus\:bg-white:focus {
-  background-color: #ffffff; }
-
-.focus\:bg-red-darkest:focus {
-  background-color: #3b0d0c; }
-
-.focus\:bg-red-darker:focus {
-  background-color: #621b18; }
-
-.focus\:bg-red-dark:focus {
-  background-color: #cc1f1a; }
-
-.focus\:bg-red:focus {
-  background-color: #e3342f; }
-
-.focus\:bg-red-light:focus {
-  background-color: #ef5753; }
-
-.focus\:bg-red-lighter:focus {
-  background-color: #f9acaa; }
-
-.focus\:bg-red-lightest:focus {
-  background-color: #fcebea; }
-
-.focus\:bg-orange-darkest:focus {
-  background-color: #462a16; }
-
-.focus\:bg-orange-darker:focus {
-  background-color: #613b1f; }
-
-.focus\:bg-orange-dark:focus {
-  background-color: #de751f; }
-
-.focus\:bg-orange:focus {
-  background-color: #f6993f; }
-
-.focus\:bg-orange-light:focus {
-  background-color: #faad63; }
-
-.focus\:bg-orange-lighter:focus {
-  background-color: #fcd9b6; }
-
-.focus\:bg-orange-lightest:focus {
-  background-color: #fff5eb; }
-
-.focus\:bg-yellow-darkest:focus {
-  background-color: #453411; }
-
-.focus\:bg-yellow-darker:focus {
-  background-color: #684f1d; }
-
-.focus\:bg-yellow-dark:focus {
-  background-color: #f2d024; }
-
-.focus\:bg-yellow:focus {
-  background-color: #ffed4a; }
-
-.focus\:bg-yellow-light:focus {
-  background-color: #fff382; }
-
-.focus\:bg-yellow-lighter:focus {
-  background-color: #fff9c2; }
-
-.focus\:bg-yellow-lightest:focus {
-  background-color: #fcfbeb; }
-
-.focus\:bg-green-darkest:focus {
-  background-color: #0f2f21; }
-
-.focus\:bg-green-darker:focus {
-  background-color: #1a4731; }
-
-.focus\:bg-green-dark:focus {
-  background-color: #1f9d55; }
-
-.focus\:bg-green:focus {
-  background-color: #38c172; }
-
-.focus\:bg-green-light:focus {
-  background-color: #51d88a; }
-
-.focus\:bg-green-lighter:focus {
-  background-color: #a2f5bf; }
-
-.focus\:bg-green-lightest:focus {
-  background-color: #e3fcec; }
-
-.focus\:bg-teal-darkest:focus {
-  background-color: #0d3331; }
-
-.focus\:bg-teal-darker:focus {
-  background-color: #20504f; }
-
-.focus\:bg-teal-dark:focus {
-  background-color: #38a89d; }
-
-.focus\:bg-teal:focus {
-  background-color: #4dc0b5; }
-
-.focus\:bg-teal-light:focus {
-  background-color: #64d5ca; }
-
-.focus\:bg-teal-lighter:focus {
-  background-color: #a0f0ed; }
-
-.focus\:bg-teal-lightest:focus {
-  background-color: #e8fffe; }
-
-.focus\:bg-blue-darkest:focus {
-  background-color: #12283a; }
-
-.focus\:bg-blue-darker:focus {
-  background-color: #1c3d5a; }
-
-.focus\:bg-blue-dark:focus {
-  background-color: #2779bd; }
-
-.focus\:bg-blue:focus {
-  background-color: #3490dc; }
-
-.focus\:bg-blue-light:focus {
-  background-color: #6cb2eb; }
-
-.focus\:bg-blue-lighter:focus {
-  background-color: #bcdefa; }
-
-.focus\:bg-blue-lightest:focus {
-  background-color: #eff8ff; }
-
-.focus\:bg-indigo-darkest:focus {
-  background-color: #191e38; }
-
-.focus\:bg-indigo-darker:focus {
-  background-color: #2f365f; }
-
-.focus\:bg-indigo-dark:focus {
-  background-color: #5661b3; }
-
-.focus\:bg-indigo:focus {
-  background-color: #6574cd; }
-
-.focus\:bg-indigo-light:focus {
-  background-color: #7886d7; }
-
-.focus\:bg-indigo-lighter:focus {
-  background-color: #b2b7ff; }
-
-.focus\:bg-indigo-lightest:focus {
-  background-color: #e6e8ff; }
-
-.focus\:bg-purple-darkest:focus {
-  background-color: #21183c; }
-
-.focus\:bg-purple-darker:focus {
-  background-color: #382b5f; }
-
-.focus\:bg-purple-dark:focus {
-  background-color: #794acf; }
-
-.focus\:bg-purple:focus {
-  background-color: #9561e2; }
-
-.focus\:bg-purple-light:focus {
-  background-color: #a779e9; }
-
-.focus\:bg-purple-lighter:focus {
-  background-color: #d6bbfc; }
-
-.focus\:bg-purple-lightest:focus {
-  background-color: #f3ebff; }
-
-.focus\:bg-pink-darkest:focus {
-  background-color: #451225; }
-
-.focus\:bg-pink-darker:focus {
-  background-color: #6f213f; }
-
-.focus\:bg-pink-dark:focus {
-  background-color: #eb5286; }
-
-.focus\:bg-pink:focus {
-  background-color: #f66d9b; }
-
-.focus\:bg-pink-light:focus {
-  background-color: #fa7ea8; }
-
-.focus\:bg-pink-lighter:focus {
-  background-color: #ffbbca; }
-
-.focus\:bg-pink-lightest:focus {
+.active\:bg-pink-lightest:active {
   background-color: #ffebef; }
 
-.active\:bg-transparent:active {
-  background-color: transparent; }
-
-.active\:bg-black:active {
-  background-color: #22292f; }
-
-.active\:bg-grey-darkest:active {
-  background-color: #3d4852; }
-
-.active\:bg-grey-darker:active {
-  background-color: #606f7b; }
-
-.active\:bg-grey-dark:active {
-  background-color: #8795a1; }
-
-.active\:bg-grey:active {
-  background-color: #b8c2cc; }
-
-.active\:bg-grey-light:active {
-  background-color: #dae1e7; }
-
-.active\:bg-grey-lighter:active {
-  background-color: #f1f5f8; }
-
-.active\:bg-grey-lightest:active {
-  background-color: #f8fafc; }
-
-.active\:bg-white:active {
-  background-color: #ffffff; }
-
-.active\:bg-red-darkest:active {
-  background-color: #3b0d0c; }
-
-.active\:bg-red-darker:active {
-  background-color: #621b18; }
-
-.active\:bg-red-dark:active {
-  background-color: #cc1f1a; }
-
-.active\:bg-red:active {
-  background-color: #e3342f; }
-
-.active\:bg-red-light:active {
-  background-color: #ef5753; }
-
-.active\:bg-red-lighter:active {
-  background-color: #f9acaa; }
-
-.active\:bg-red-lightest:active {
-  background-color: #fcebea; }
-
-.active\:bg-orange-darkest:active {
-  background-color: #462a16; }
-
-.active\:bg-orange-darker:active {
-  background-color: #613b1f; }
-
-.active\:bg-orange-dark:active {
-  background-color: #de751f; }
-
-.active\:bg-orange:active {
-  background-color: #f6993f; }
-
-.active\:bg-orange-light:active {
-  background-color: #faad63; }
-
-.active\:bg-orange-lighter:active {
-  background-color: #fcd9b6; }
-
-.active\:bg-orange-lightest:active {
-  background-color: #fff5eb; }
-
-.active\:bg-yellow-darkest:active {
-  background-color: #453411; }
-
-.active\:bg-yellow-darker:active {
-  background-color: #684f1d; }
-
-.active\:bg-yellow-dark:active {
-  background-color: #f2d024; }
-
-.active\:bg-yellow:active {
-  background-color: #ffed4a; }
-
-.active\:bg-yellow-light:active {
-  background-color: #fff382; }
-
-.active\:bg-yellow-lighter:active {
-  background-color: #fff9c2; }
-
-.active\:bg-yellow-lightest:active {
-  background-color: #fcfbeb; }
-
-.active\:bg-green-darkest:active {
-  background-color: #0f2f21; }
-
-.active\:bg-green-darker:active {
-  background-color: #1a4731; }
-
-.active\:bg-green-dark:active {
-  background-color: #1f9d55; }
-
-.active\:bg-green:active {
-  background-color: #38c172; }
-
-.active\:bg-green-light:active {
-  background-color: #51d88a; }
-
-.active\:bg-green-lighter:active {
-  background-color: #a2f5bf; }
-
-.active\:bg-green-lightest:active {
-  background-color: #e3fcec; }
-
-.active\:bg-teal-darkest:active {
-  background-color: #0d3331; }
-
-.active\:bg-teal-darker:active {
-  background-color: #20504f; }
-
-.active\:bg-teal-dark:active {
-  background-color: #38a89d; }
-
-.active\:bg-teal:active {
-  background-color: #4dc0b5; }
-
-.active\:bg-teal-light:active {
-  background-color: #64d5ca; }
-
-.active\:bg-teal-lighter:active {
-  background-color: #a0f0ed; }
-
-.active\:bg-teal-lightest:active {
-  background-color: #e8fffe; }
-
-.active\:bg-blue-darkest:active {
-  background-color: #12283a; }
-
-.active\:bg-blue-darker:active {
-  background-color: #1c3d5a; }
-
-.active\:bg-blue-dark:active, .extendedButton:active {
-  background-color: #2779bd; }
-
-.active\:bg-blue:active {
-  background-color: #3490dc; }
-
-.active\:bg-blue-light:active {
-  background-color: #6cb2eb; }
-
-.active\:bg-blue-lighter:active {
-  background-color: #bcdefa; }
-
-.active\:bg-blue-lightest:active {
-  background-color: #eff8ff; }
-
-.active\:bg-indigo-darkest:active {
-  background-color: #191e38; }
-
-.active\:bg-indigo-darker:active {
-  background-color: #2f365f; }
-
-.active\:bg-indigo-dark:active {
-  background-color: #5661b3; }
-
-.active\:bg-indigo:active {
-  background-color: #6574cd; }
-
-.active\:bg-indigo-light:active {
-  background-color: #7886d7; }
-
-.active\:bg-indigo-lighter:active {
-  background-color: #b2b7ff; }
-
-.active\:bg-indigo-lightest:active {
-  background-color: #e6e8ff; }
-
-.active\:bg-purple-darkest:active {
-  background-color: #21183c; }
-
-.active\:bg-purple-darker:active {
-  background-color: #382b5f; }
-
-.active\:bg-purple-dark:active {
-  background-color: #794acf; }
-
-.active\:bg-purple:active {
-  background-color: #9561e2; }
-
-.active\:bg-purple-light:active {
-  background-color: #a779e9; }
-
-.active\:bg-purple-lighter:active {
-  background-color: #d6bbfc; }
-
-.active\:bg-purple-lightest:active {
-  background-color: #f3ebff; }
-
-.active\:bg-pink-darkest:active {
-  background-color: #451225; }
-
-.active\:bg-pink-darker:active {
-  background-color: #6f213f; }
-
-.active\:bg-pink-dark:active {
-  background-color: #eb5286; }
-
-.active\:bg-pink:active {
-  background-color: #f66d9b; }
-
-.active\:bg-pink-light:active {
-  background-color: #fa7ea8; }
-
-.active\:bg-pink-lighter:active {
-  background-color: #ffbbca; }
-
-.active\:bg-pink-lightest:active {
+.focus\:bg-pink-lightest:focus {
   background-color: #ffebef; }
 
 .group:hover .group-hover\:bg-transparent {

@@ -1,0 +1,72 @@
+
+// Background color
+@mixin backgroundColor($key, $variant: false) {
+  $value: map-get($backgroundColors, $key);
+  @include variant($variant) {
+    background-color: #{$value};
+  }
+}
+
+@each $key, $value in $backgroundColors {
+
+  // Class name .bg-{color}
+  %bg-#{$key} {
+    @include backgroundColor($key)
+  }
+  @if $generateClasses {
+    .bg-#{$key} {
+      @extend %bg-#{$key};
+    }
+  }
+
+
+  // Class name .{variant}:text-{$color}
+  @each $variant in $backgroundColorVariants {
+    %#{$variant}\:bg-#{$key} {
+      @include backgroundColor($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:bg-#{$key} {
+        @extend %#{$variant}\:bg-#{$key};
+      }
+    }
+  }
+}
+
+
+// Group hover background color
+// Class name .group:hover .group-hover:text-{color}
+@mixin groupHoverBackgroundColor($key) {
+  .group:hover & {
+    @include backgroundColor($key);
+  }
+}
+@each $key, $value in $groupHoverBackgroundColors {
+  %group-hover\:bg-#{$key} {
+    @include groupHoverBackgroundColor($key);
+  }
+  @if $generateClasses {
+    .group-hover\:bg-#{$key} {
+      @extend %group-hover\:bg-#{$key};
+    }
+  }
+}
+
+
+// Responsive background color
+// @media {screen}
+// Class name .{screen}:bg-{color}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $colorKey, $colorValue in $responsiveBackgroundColors {
+      %#{$screenKey}\:bg-#{$colorKey} {
+        @include backgroundColor($colorKey);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:bg-#{$colorKey} {
+          @extend %#{$screenKey}\:bg-#{$colorKey};
+        }
+      }
+    }
+  }
+}
