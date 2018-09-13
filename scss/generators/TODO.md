@@ -1,10 +1,10 @@
 
 
+### Paddings & Margins
+
+- All
+
 ### Borders
-
-High
-
-- State variants border-color `.{variant}:border-color`
 
 Low
 

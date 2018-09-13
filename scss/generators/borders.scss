@@ -68,9 +68,11 @@
 
 
 // .border-{color}
-@mixin borderColor($key) {
+@mixin borderColor($key, $variant: false) {
   $value: map-get($borderColors, $key);
-  border-color: #{$value};
+  @include variant($variant) {
+    border-color: #{$value};
+  }
 }
 @each $key, $value in $borderColors {
   %border-#{$key} {
@@ -79,6 +81,20 @@
   @if $generateClasses {
     .border-#{$key} {
       @extend %border-#{$key};
+    }
+  }
+}
+
+// Class name .{variant}:border-{$color}
+@each $variant in $borderColorVariants {
+  @each $colorKey, $colorValue in $borderColors {
+    %#{$variant}\:border-#{$colorKey} {
+      @include borderColor($colorKey, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:border-#{$colorKey} {
+        @extend %#{$variant}\:border-#{$colorKey};
+      }
     }
   }
 }

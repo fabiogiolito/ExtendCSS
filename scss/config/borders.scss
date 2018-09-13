@@ -24,6 +24,17 @@ $borderSides: (
 // Class name: .border-{color}
 $borderColors: $colors;
 
+// ========================================================
+// State variants border color
+// Class names:
+//    .hover:border-{color}
+//    .focus:border-{color}
+//    .active:border-{color}
+// Default: ('hover', 'active', 'focus')
+// Customize: remove from list unwanted variants
+// Disable: set equal to ();
+$borderColorVariants: ('hover', 'active', 'focus');
+
 // Class name: .{screen}:border-{color}
 $responsiveBorderColors: $borderColors;
 

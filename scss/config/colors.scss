@@ -107,6 +107,7 @@ $textColors: $colors;
 //    .hover:text-{color}
 //    .focus:text-{color}
 //    .active:text-{color}
+// Default: ('hover', 'active', 'focus')
 // Customize: remove from list unwanted variants
 // Disable: set equal to ();
 $textColorVariants: ('hover', 'active', 'focus');
@@ -144,6 +145,7 @@ $backgroundColors: $colors;
 //    .hover:bg-{color}
 //    .focus:bg-{color}
 //    .active:bg-{color}
+// Default: ('hover', 'active', 'focus')
 // Customize: remove from list unwanted variants
 // Disable: set equal to ();
 $backgroundColorVariants: ('hover', 'active', 'focus');
