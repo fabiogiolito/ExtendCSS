@@ -1,0 +1,10 @@
+
+@mixin media($size) {
+  @if map-has-key($screens, $size) {
+    @media #{map-get($screens, $size)} {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

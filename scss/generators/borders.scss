@@ -1,0 +1,85 @@
+* {
+  border: #{$borderDefault};
+}
+
+// .border{-side?}{-width?}
+@mixin border($widthKey: 'default', $sideKey: 'default') {
+  $sideValue: map-get($borderSides, $sideKey);
+  $widthValue: map-get($borderWidths, $widthKey);
+  @if $sideKey == 'default' {
+    border-width: #{$widthValue};
+  } @else {
+    @if length($sideValue) > 1 {
+      @each $value in $sideValue {
+        border-#{$value}-width: #{$widthValue};
+      }
+    } @else {
+      border-#{$sideValue}-width: #{$widthValue};
+    }
+  }
+}
+
+
+// .border-{width}
+// .border-{side}
+// .border-{side}-{width}
+
+@each $widthKey, $widthValue in $borderWidths {
+  @if $widthKey == 'default' {
+    %border {
+      @include border($widthKey);
+    }
+    @if $generateClasses {
+      .border {
+        @extend %border;
+      }
+    }
+  } @else {
+    %border-#{$widthKey} {
+      @include border($widthKey);
+    }
+    @if $generateClasses {
+      .border-#{$widthKey} {
+        @extend %border-#{$widthKey};
+      }
+    }
+  }
+
+  @each $sideKey, $sideValue in $borderSides {
+    @if $widthKey == 'default' {
+      %border-#{$sideKey} {
+        @include border($widthKey, $sideKey);
+      }
+      @if $generateClasses {
+        .border-#{$sideKey} {
+          @extend %border-#{$sideKey};
+        }
+      }
+    } @else {
+      %border-#{$sideKey}-#{$widthKey} {
+        @include border($widthKey, $sideKey);
+      }
+      @if $generateClasses {
+        .border-#{$sideKey}-#{$widthKey} {
+          @extend %border-#{$sideKey}-#{$widthKey};
+        }
+      }
+    }
+  }
+}
+
+// .border-{color}
+@mixin borderColor($key) {
+  $value: map-get($borderColors, $key);
+  border-color: #{$value};
+}
+@each $key, $value in $borderColors {
+  %border-#{$key} {
+    @include borderColor($key);
+  }
+  @if $generateClasses {
+    .border-#{$key} {
+      @extend %border-#{$key};
+    }
+  }
+}

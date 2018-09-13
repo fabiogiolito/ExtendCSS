@@ -1,0 +1,9 @@
+@mixin variant($variant) {
+  @if $variant {
+    &:#{$variant} {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
