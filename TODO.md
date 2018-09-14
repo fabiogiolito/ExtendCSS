@@ -1,6 +1,6 @@
 ### Misc
 
-  - [ ] Try making responsive generators a variant
+  - [ ] Try making responsive part of variants
 
 
 ### Layout
@@ -12,6 +12,8 @@
   - [ ] Position
   - [ ] Visibility
   - [ ] Z-index
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Typography
 
@@ -26,6 +28,8 @@
   - [ ] Text alignment
   - [ ] Vertical alignment
   - [ ] Whitespace & Wrapping
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Backgrounds
 
@@ -34,6 +38,8 @@
   - [ ] Background Position
   - [ ] Background Repeat
   - [x] Background Size
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Borders
 
@@ -41,6 +47,8 @@
   - [x] Border Style
   - [x] Border Width
   - [x] Border Radius
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Flexbox
 
@@ -52,26 +60,34 @@
   - [x] Align Self
   - [x] Justify Content
   - [x] Flex Grow, & Shrink
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Spacing
 
   - [x] Padding
   - [x] Margin
   - [x] Negative Margin
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Sizing
 
-  - [ ] Width
-  - [ ] Min-Width
-  - [ ] Max-Width
-  - [ ] Height
-  - [ ] Min-Height
-  - [ ] Max-Height
+  - [x] Width
+  - [x] Min-Width
+  - [x] Max-Width
+  - [x] Height
+  - [x] Min-Height
+  - [x] Max-Height
+  - [x] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Tables
 
   - [ ] Border Collapse
   - [ ] Table Layout
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Interactivity
 
@@ -79,6 +95,8 @@
   - [ ] Pointer Events
   - [ ] Resize
   - [ ] User Select
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments
 
 ### Miscellaneous
 
@@ -87,3 +105,5 @@
   - [ ] Opacity
   - [ ] Outline
   - [ ] SVG
+  - [ ] Check: Variants, Responsive, Group-hover
+  - [ ] Check: Helpful comments

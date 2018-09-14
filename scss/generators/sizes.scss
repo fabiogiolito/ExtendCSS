@@ -1,0 +1,304 @@
+
+// Width
+@mixin width($key, $variant: false) {
+  $value: map-get($widths, $key);
+  @include variant($variant) {
+    width: #{$value};
+  }
+}
+
+// .w-{size}
+@each $key, $value in $widths {
+  %w-#{$key} {
+    @include width($key);
+  }
+  @if $generateClasses {
+    .w-#{$key} {
+      @extend %w-#{$key};
+    }
+  }
+}
+// .{variant}:w-{size}
+@each $variant in $widthVariants {
+  @each $key, $value in $widths {
+    %#{$variant}\:w-#{$key} {
+      @include width($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:w-#{$key} {
+        @extend %#{$variant}\:w-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:w-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveWidths {
+      %#{$screenKey}\:w-#{$key} {
+        @include width($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:w-#{$key} {
+          @extend %#{$screenKey}\:w-#{$key};
+        }
+      }
+    }
+  }
+}
+
+
+// ==============================
+
+
+// Min Width
+@mixin minWidth($key, $variant: false) {
+  $value: map-get($minWidths, $key);
+  @include variant($variant) {
+    min-width: #{$value};
+  }
+}
+
+// .min-w-{size}
+@each $key, $value in $minWidths {
+  %min-w-#{$key} {
+    @include minWidth($key);
+  }
+  @if $generateClasses {
+    .min-w-#{$key} {
+      @extend %min-w-#{$key};
+    }
+  }
+}
+// .{variant}:min-w-{size}
+@each $variant in $minWidthVariants {
+  @each $key, $value in $minWidths {
+    %#{$variant}\:min-w-#{$key} {
+      @include minWidth($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:min-w-#{$key} {
+        @extend %#{$variant}\:min-w-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:min-w-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveMinWidths {
+      %#{$screenKey}\:min-w-#{$key} {
+        @include minWidth($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:min-w-#{$key} {
+          @extend %#{$screenKey}\:min-w-#{$key};
+        }
+      }
+    }
+  }
+}
+
+
+// ==============================
+
+
+// Max Width
+@mixin maxWidth($key, $variant: false) {
+  $value: map-get($maxWidths, $key);
+  @include variant($variant) {
+    max-width: #{$value};
+  }
+}
+
+// .max-w-{size}
+@each $key, $value in $maxWidths {
+  %max-w-#{$key} {
+    @include maxWidth($key);
+  }
+  @if $generateClasses {
+    .max-w-#{$key} {
+      @extend %max-w-#{$key};
+    }
+  }
+}
+// .{variant}:max-w-{size}
+@each $variant in $maxWidthVariants {
+  @each $key, $value in $maxWidths {
+    %#{$variant}\:max-w-#{$key} {
+      @include maxWidth($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:max-w-#{$key} {
+        @extend %#{$variant}\:max-w-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:max-w-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveMaxWidths {
+      %#{$screenKey}\:max-w-#{$key} {
+        @include maxWidth($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:max-w-#{$key} {
+          @extend %#{$screenKey}\:max-w-#{$key};
+        }
+      }
+    }
+  }
+}
+
+
+// ==============================
+
+// Height
+@mixin height($key, $variant: false) {
+  $value: map-get($heights, $key);
+  @include variant($variant) {
+    height: #{$value};
+  }
+}
+
+// .h-{size}
+@each $key, $value in $heights {
+  %h-#{$key} {
+    @include height($key);
+  }
+  @if $generateClasses {
+    .h-#{$key} {
+      @extend %h-#{$key};
+    }
+  }
+}
+// .{variant}:h-{size}
+@each $variant in $heightVariants {
+  @each $key, $value in $heights {
+    %#{$variant}\:h-#{$key} {
+      @include height($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:h-#{$key} {
+        @extend %#{$variant}\:h-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:h-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveHeights {
+      %#{$screenKey}\:h-#{$key} {
+        @include height($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:h-#{$key} {
+          @extend %#{$screenKey}\:h-#{$key};
+        }
+      }
+    }
+  }
+}
+
+// ==============================
+
+// Min Height
+@mixin minHeight($key, $variant: false) {
+  $value: map-get($minHeights, $key);
+  @include variant($variant) {
+    min-height: #{$value};
+  }
+}
+
+// .min-h-{size}
+@each $key, $value in $minHeights {
+  %min-h-#{$key} {
+    @include minHeight($key);
+  }
+  @if $generateClasses {
+    .min-h-#{$key} {
+      @extend %min-h-#{$key};
+    }
+  }
+}
+// .{variant}:min-h-{size}
+@each $variant in $minHeightVariants {
+  @each $key, $value in $minHeights {
+    %#{$variant}\:min-h-#{$key} {
+      @include minHeight($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:min-h-#{$key} {
+        @extend %#{$variant}\:min-h-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:h-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveMinHeights {
+      %#{$screenKey}\:min-h-#{$key} {
+        @include minHeight($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:min-h-#{$key} {
+          @extend %#{$screenKey}\:min-h-#{$key};
+        }
+      }
+    }
+  }
+}
+
+
+// ==============================
+
+// Max Height
+@mixin maxHeight($key, $variant: false) {
+  $value: map-get($maxHeights, $key);
+  @include variant($variant) {
+    max-height: #{$value};
+  }
+}
+
+// .max-h-{size}
+@each $key, $value in $maxHeights {
+  %max-h-#{$key} {
+    @include maxHeight($key);
+  }
+  @if $generateClasses {
+    .max-h-#{$key} {
+      @extend %max-h-#{$key};
+    }
+  }
+}
+// .{variant}:max-h-{size}
+@each $variant in $maxHeightVariants {
+  @each $key, $value in $maxHeights {
+    %#{$variant}\:max-h-#{$key} {
+      @include maxHeight($key, $variant);
+    }
+    @if $generateClasses {
+      .#{$variant}\:max-h-#{$key} {
+        @extend %#{$variant}\:max-h-#{$key};
+      }
+    }
+  }
+}
+// .{screen}:h-{size}
+@each $screenKey, $screenValue in $screens {
+  @include media($screenKey) {
+    @each $key, $value in $responsiveMaxHeights {
+      %#{$screenKey}\:max-h-#{$key} {
+        @include maxHeight($key);
+      }
+      @if $generateClasses {
+        .#{$screenKey}\:max-h-#{$key} {
+          @extend %#{$screenKey}\:max-h-#{$key};
+        }
+      }
+    }
+  }
+}

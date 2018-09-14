@@ -1,5 +1,5 @@
 // Class name: .w-{size}
-$width: (
+$widths: (
   'auto': 'auto',
   'px': '1px',
   '1': '0.25rem',
@@ -16,23 +16,27 @@ $width: (
   '32': '8rem',
   '48': '12rem',
   '64': '16rem',
-  '1/2': '50%',
-  '1/3': '33.33333%',
-  '2/3': '66.66667%',
-  '1/4': '25%',
-  '3/4': '75%',
-  '1/5': '20%',
-  '2/5': '40%',
-  '3/5': '60%',
-  '4/5': '80%',
-  '1/6': '16.66667%',
-  '5/6': '83.33333%',
+  // '1/2': '50%',
+  // '1/3': '33.33333%',
+  // '2/3': '66.66667%',
+  // '1/4': '25%',
+  // '3/4': '75%',
+  // '1/5': '20%',
+  // '2/5': '40%',
+  // '3/5': '60%',
+  // '4/5': '80%',
+  // '1/6': '16.66667%',
+  // '5/6': '83.33333%',
   'full': '100%',
   'screen': '100vw',
 );
 
+$widthVariants: ('hover', 'active', 'focus');
+$responsiveWidths: $widths;
+
+
 // Class name: .h-{size}
-$height: (
+$heights: (
   'auto': 'auto',
   'px': '1px',
   '1': '0.25rem',
@@ -53,21 +57,31 @@ $height: (
   'screen': '100vh',
 );
 
+$heightVariants: ('hover', 'active', 'focus');
+$responsiveHeights: $heights;
+
 // Class name: .min-w-{size}
-$minWidth: (
+$minWidths: (
   '0': '0',
   'full': '100%',
 );
 
+$minWidthVariants: ('hover', 'active', 'focus');
+$responsiveMinWidths: $minWidths;
+
 // Class name: .min-h-{size}
-$minHeight: (
+$minHeights: (
   '0': '0',
   'full': '100%',
   'screen': '100vh',
 );
 
+$minHeightVariants: ('hover', 'active', 'focus');
+$responsiveMinHeights: $minHeights;
+
+
 // Class name: .max-w-{size}
-$maxWidth: (
+$maxWidths: (
   'xs': '20rem',
   'sm': '30rem',
   'md': '40rem',
@@ -80,8 +94,15 @@ $maxWidth: (
   'full': '100%',
 );
 
+$maxWidthVariants: ('hover', 'active', 'focus');
+$responsiveMaxWidths: $maxWidths;
+
+
 // Class name: .max-h-{size}
-$maxHeight: (
+$maxHeights: (
   'full': '100%',
   'screen': '100vh',
 );
+
+$maxHeightVariants: ('hover', 'active', 'focus');
+$responsiveMaxHeights: $maxHeights;
