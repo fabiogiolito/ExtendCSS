@@ -15,6 +15,7 @@ $generateClasses: true;
 @import 'config/spacing';
 @import 'config/shadows';
 @import 'config/misc';
+@import 'config/display';
 
 // Generators
 @import 'generators/textColor';
@@ -22,6 +23,7 @@ $generateClasses: true;
 @import 'generators/backgroundSize';
 @import 'generators/borders';
 @import 'generators/spacing';
+@import 'generators/flex';
 
 
 

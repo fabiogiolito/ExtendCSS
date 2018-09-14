@@ -19,7 +19,7 @@
   }
 }
 
-// Class name .{variant}:text-{$color}
+// Class name .{variant}:text-{color}
 @each $variant in $textColorVariants {
   @each $colorKey, $colorValue in $textColors {
     %#{$variant}\:text-#{$colorKey} {

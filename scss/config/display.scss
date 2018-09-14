@@ -1,0 +1,113 @@
+
+$display: (
+  'flex',
+  'inline-flex',
+  'block',
+  'inline',
+  'inline-block',
+);
+
+// ============================
+
+$flexDirections: (
+  'row': 'row',
+  'row-reverse': 'row-reverse',
+  'col': 'column',
+  'col-reverse': 'column-reverse'
+);
+
+$flexDirectionsVariants: ('hover', 'active', 'focus');
+$responsiveFlexDirections: $flexDirections;
+
+
+// ============================
+
+$flexWrap: (
+  'wrap': 'wrap',
+  'wrap-reverse': 'wrap-reverse',
+  'no-wrap': 'nowrap',
+);
+
+$flexWrapVariants: ('hover', 'active', 'focus');
+$responsiveFlexWrap: $flexWrap;
+
+
+// ============================
+
+$flexAlignItems: (
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'center': 'center',
+  'baseline': 'baseline',
+  'stretch': 'stretch',
+);
+
+$flexAlignItemsVariants: ('hover', 'active', 'focus');
+$responsiveFlexAlignItems: $flexAlignItems;
+
+// ============================
+
+$flexAlignSelf: (
+  'auto': 'auto',
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'center': 'center',
+  'stretch': 'stretch',
+);
+
+$flexAlignSelfVariants: ('hover', 'active', 'focus');
+$responsiveFlexAlignSelf: $flexAlignSelf;
+
+// ============================
+
+
+$flexJustifyContent: (
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'center': 'center',
+  'between': 'space-between',
+  'around': 'space-around',
+);
+
+$flexJustifyContentVariants: ('hover', 'active', 'focus');
+$responsiveFlexJustifyContent: $flexJustifyContent;
+
+// ============================
+
+
+$flexAlignContent: (
+  'center': 'center',
+  'start': 'flex-start',
+  'end': 'flex-end',
+  'between': 'space-between',
+  'around': 'space-around',
+);
+
+$flexAlignContentVariants: ('hover', 'active', 'focus');
+$responsiveFlexAlignContent: $flexAlignContent;
+
+// ============================
+
+
+$flexSize: (
+  '1': '1',
+  'auto': 'auto',
+  'initial': 'initial',
+  'none': 'none',
+);
+
+
+$flexSizeVariants: ('hover', 'active', 'focus');
+$responsiveFlexSize: $flexSize;
+
+// ============================
+
+$flexGrow: (
+  'grow': '1',
+  'shrink': '1',
+  'no-grow': '0',
+  'no-shrink': '0',
+);
+
+$flexGrowVariants: ('hover', 'active', 'focus');
+$responsiveFlexGrow: $flexGrow;
