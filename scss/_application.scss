@@ -21,6 +21,7 @@ $generateClasses: true;
 @import 'generators/backgroundColor';
 @import 'generators/backgroundSize';
 @import 'generators/borders';
+@import 'generators/spacing';
 
 
 
@@ -34,8 +35,8 @@ $generateClasses: true;
   // @extend %font-semibold;
   @extend %hover\:text-white;
   @extend %active\:text-white;
-  // @extend %py-2;
-  // @extend %px-4;
+  @extend %py-2;
+  @extend %px-4;
   @extend %border;
   @extend %border-blue;
   @extend %hover\:border-transparent;
@@ -52,8 +53,8 @@ $generateClasses: true;
   // @include .font-semibold;
   @include textColor('white', 'hover');
   @include textColor('white', 'active');
-  // @include .py-2;
-  // @include .px-4;
+  @include padding('2', 'y');
+  @include padding('4', 'x');
   @include border;
   @include borderColor('blue');
   @include borderColor('transparent', 'hover');

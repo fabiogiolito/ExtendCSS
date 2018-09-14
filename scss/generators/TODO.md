@@ -2,7 +2,10 @@
 
 ### Paddings & Margins
 
-- All
+- `.p{side?}-{size}`
+- `.m{side?}-{size}`
+- `.-m{side?}-{size}`
+
 
 ### Borders
 
