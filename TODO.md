@@ -1,3 +1,7 @@
+### Misc
+
+  - [ ] Try making responsive generators a variant
+
 
 ### Layout
 
@@ -40,14 +44,14 @@
 
 ### Flexbox
 
-  - [ ] Display
-  - [ ] Flex Direction
-  - [ ] Flex Wrapping
-  - [ ] Align Items
-  - [ ] Align Content
-  - [ ] Align Self
-  - [ ] Justify Content
-  - [ ] Flex, Grow, & Shrink
+  - [x] Display
+  - [x] Flex Direction
+  - [x] Flex Wrapping
+  - [x] Align Items
+  - [x] Align Content
+  - [x] Align Self
+  - [x] Justify Content
+  - [x] Flex Grow, & Shrink
 
 ### Spacing
 
