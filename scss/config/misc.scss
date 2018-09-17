@@ -1,5 +1,8 @@
-// Class name: .z-{index}
-$zIndex: (
+// ========================================================
+// Z-index classes
+// Format: ({key}: {value}, …)
+// Class: .z-{key} { z-index: {value} }
+$zIndexes: (
   'auto': 'auto',
   '0': 0,
   '10': 10,
@@ -9,8 +12,17 @@ $zIndex: (
   '50': 50,
 );
 
-// Class name: .opacity-{name}
-$opacity: (
+// Variants for z-index
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$zIndexVariants: $defaultVariants;
+
+
+// ========================================================
+// Opacity classes
+// Format: ({key}: {value}, …)
+// Class: .opacity-{key} { opacity: {value} }
+$opacities: (
  '0': '0',
  '25': '.25',
  '50': '.5',
@@ -18,12 +30,40 @@ $opacity: (
  '100': '1',
 );
 
-// Class name: .fill-{name}
-$svgFill: (
+// Variants for opacity
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$opacityVariants: $defaultVariants;
+
+
+// ========================================================
+// SVG Fill classes
+// Format: ({key}: {value}, …)
+// Class: .fill-{key} { fill: {value} }
+$svgFills: (
   'current': 'currentColor',
 );
 
-// Class name: .stroke-{name}
-$svgStroke: (
+// Create classes for all default colors as well
+$svgFills: join($svgFills, $colors, 'comma');
+
+// Variants for svg fill
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$svgFillVariants: $defaultVariants;
+
+// ========================================================
+// SVG Stroke classes
+// Format: ({key}: {value}, …)
+// Class: .stroke-{key} { stroke: {value} }
+$svgStrokes: (
   'current': 'currentColor',
 );
+
+// Create classes for all default colors as well
+$svgStrokes: join($svgStrokes, $colors, 'comma');
+
+// Variants for svg stroke
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$svgStrokeVariants: $defaultVariants;

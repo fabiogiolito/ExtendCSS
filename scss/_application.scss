@@ -19,8 +19,8 @@
 @import 'config/sizes';
 @import 'config/spacing';
 @import 'config/shadows';
-// @import 'config/misc';
 @import 'config/display';
+@import 'config/misc';
 
 
 // ========================================================
@@ -98,6 +98,12 @@ $classes: (
   ('flex', 'flex', $flexSizes, $flexSizeVariants),
   ('flex', 'flex-grow', $flexGrows, $flexGrowVariants),
   ('flex', 'flex-shrink', $flexShrinks, $flexShrinkVariants),
+
+  // config/misc.scss
+  ('z', 'z-index', $zIndexes, $zIndexVariants),
+  ('opacity', 'opacity', $opacities, $opacityVariants),
+  // ('fill', 'fill', $svgFills, $svgFillVariants),
+  // ('stroke', 'stroke', $svgStrokes, $svgStrokeVariants),
 
   // config/.scss
   // ('class', '', '', ()),
