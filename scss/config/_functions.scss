@@ -57,7 +57,7 @@
         @each $pKey, $pValue in $properties {
           $pKey: if($pKey == 'default', '', '-#{$pKey}');
           @each $key, $value in $values {
-            $key: if($key == 'default', '', '-#{$key}');
+            $key: if($key == 'default', '', if($base == '', '#{$key}', '-#{$key}'));
 
             .#{$classPrepend}#{$base}#{$pKey}#{$key}#{$classAppend} {
               @each $val in $pValue {

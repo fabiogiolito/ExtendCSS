@@ -32,7 +32,7 @@ $borderWidthProperties: (
   'y': ('border-top-width', 'border-bottom-width'),
 );
 
-// Variants for font size
+// Variants for border width
 // Customize: define new list of variants
 // See config/variants.scss file for details
 $borderWidthVariants: ();
@@ -44,7 +44,7 @@ $borderWidthVariants: ();
 // Class: .border-{key} { border-color: {value} }
 $borderColors: $colors;
 
-// Variants for font size
+// Variants for border color
 // Customize: define new list of variants
 // See config/variants.scss file for details
 $borderColorVariants: $defaultVariants;

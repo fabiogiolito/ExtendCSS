@@ -20,7 +20,7 @@
 @import 'config/spacing';
 @import 'config/shadows';
 // @import 'config/misc';
-// @import 'config/display';
+@import 'config/display';
 
 
 // ========================================================
@@ -87,8 +87,17 @@ $classes: (
   // config/shadows.scss
   ('shadow', 'box-shadow', $shadows, $shadowVariants),
 
-  // config/.scss
-  // ('class', '', '', ()),
+  // config/display.scss
+  ('', 'display', $displays, $displayVariants),
+  ('flex', 'flex-direction', $flexDirections, $flexDirectionVariants),
+  ('flex', 'flex-wrap', $flexWraps, $flexWrapVariants),
+  ('items', 'align-items', $flexAlignItems, $flexAlignItemsVariants),
+  ('self', 'align-self', $flexAlignSelfs, $flexAlignSelfVariants),
+  ('justify', 'justify-content', $flexJustifyContents, $flexJustifyContentVariants),
+  ('content', 'align-content', $flexAlignContents, $flexAlignContentVariants),
+  ('flex', 'flex', $flexSizes, $flexSizeVariants),
+  ('flex', 'flex-grow', $flexGrows, $flexGrowVariants),
+  ('flex', 'flex-shrink', $flexShrinks, $flexShrinkVariants),
 
   // config/.scss
   // ('class', '', '', ()),

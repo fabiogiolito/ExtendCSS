@@ -1,14 +1,29 @@
 
-$display: (
-  'flex',
-  'inline-flex',
-  'block',
-  'inline',
-  'inline-block',
+// ========================================================
+// Display classes
+// Format: ({key}: {value}, …)
+// Class: .{key} { display: {value} }
+// Notice there's no base class, base is '' (empty string)
+// so we get .block instead of .display-block
+
+$displays: (
+  'flex': 'flex',
+  'inline-flex': 'inline-flex',
+  'block': 'block',
+  'inline': 'inline',
+  'inline-block': 'inline-block',
 );
 
-// ============================
+// Variants for display
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$displayVariants: $defaultVariants;
 
+
+// ========================================================
+// Flex direction classes
+// Format: ({key}: {value}, …)
+// Class: .flex-{key} { flex-direction: {value} }
 $flexDirections: (
   'row': 'row',
   'row-reverse': 'row-reverse',
@@ -16,24 +31,32 @@ $flexDirections: (
   'col-reverse': 'column-reverse'
 );
 
-$flexDirectionsVariants: ('hover', 'active', 'focus');
-$responsiveFlexDirections: $flexDirections;
+// Variants for flex direction
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexDirectionVariants: $defaultVariants;
 
 
-// ============================
-
-$flexWrap: (
+// ========================================================
+// Flex wrap classes
+// Format: ({key}: {value}, …)
+// Class: .flex-{key} { flex-wrap: {value} }
+$flexWraps: (
   'wrap': 'wrap',
   'wrap-reverse': 'wrap-reverse',
   'no-wrap': 'nowrap',
 );
 
-$flexWrapVariants: ('hover', 'active', 'focus');
-$responsiveFlexWrap: $flexWrap;
+// Variants for flex wrap
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexWrapVariants: $defaultVariants;
 
 
-// ============================
-
+// ========================================================
+// Flex align-items classes
+// Format: ({key}: {value}, …)
+// Class: .items-{key} { align-items: {value} }
 $flexAlignItems: (
   'start': 'flex-start',
   'end': 'flex-end',
@@ -42,12 +65,17 @@ $flexAlignItems: (
   'stretch': 'stretch',
 );
 
-$flexAlignItemsVariants: ('hover', 'active', 'focus');
-$responsiveFlexAlignItems: $flexAlignItems;
+// Variants for flex align-items
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexAlignItemsVariants: $defaultVariants;
 
-// ============================
 
-$flexAlignSelf: (
+// ========================================================
+// Flex align-self classes
+// Format: ({key}: {value}, …)
+// Class: .self-{key} { align-self: {value} }
+$flexAlignSelfs: (
   'auto': 'auto',
   'start': 'flex-start',
   'end': 'flex-end',
@@ -55,13 +83,17 @@ $flexAlignSelf: (
   'stretch': 'stretch',
 );
 
-$flexAlignSelfVariants: ('hover', 'active', 'focus');
-$responsiveFlexAlignSelf: $flexAlignSelf;
+// Variants for flex align-self
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexAlignSelfVariants: $defaultVariants;
 
-// ============================
 
-
-$flexJustifyContent: (
+// ========================================================
+// Flex justify-content classes
+// Format: ({key}: {value}, …)
+// Class: .justify-{key} { justify-content: {value} }
+$flexJustifyContents: (
   'start': 'flex-start',
   'end': 'flex-end',
   'center': 'center',
@@ -69,13 +101,17 @@ $flexJustifyContent: (
   'around': 'space-around',
 );
 
-$flexJustifyContentVariants: ('hover', 'active', 'focus');
-$responsiveFlexJustifyContent: $flexJustifyContent;
+// Variants for flex justify-content
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexJustifyContentVariants: $defaultVariants;
 
-// ============================
 
-
-$flexAlignContent: (
+// ========================================================
+// Flex align-content classes
+// Format: ({key}: {value}, …)
+// Class: .content-{key} { align-content: {value} }
+$flexAlignContents: (
   'center': 'center',
   'start': 'flex-start',
   'end': 'flex-end',
@@ -83,31 +119,54 @@ $flexAlignContent: (
   'around': 'space-around',
 );
 
-$flexAlignContentVariants: ('hover', 'active', 'focus');
-$responsiveFlexAlignContent: $flexAlignContent;
+// Variants for flex align-content
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexAlignContentVariants: $defaultVariants;
 
-// ============================
 
-
-$flexSize: (
+// ========================================================
+// Flex size classes
+// Format: ({key}: {value}, …)
+// Class: .flex-{key} { flex: {value} }
+$flexSizes: (
   '1': '1',
   'auto': 'auto',
   'initial': 'initial',
   'none': 'none',
 );
 
+// Variants for flex size
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexSizeVariants: $defaultVariants;
 
-$flexSizeVariants: ('hover', 'active', 'focus');
-$responsiveFlexSize: $flexSize;
 
-// ============================
-
-$flexGrow: (
+// ========================================================
+// Flex grow classes
+// Format: ({key}: {value}, …)
+// Class: .flex-{key} { flex-grow: {value} }
+$flexGrows: (
   'grow': '1',
-  'shrink': '1',
   'no-grow': '0',
+);
+
+// Variants for flex grow
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexGrowVariants: $defaultVariants;
+
+
+// ========================================================
+// Flex shrink classes
+// Format: ({key}: {value}, …)
+// Class: .flex-{key} { flex-shrink: {value} }
+$flexShrinks: (
+  'shrink': '1',
   'no-shrink': '0',
 );
 
-$flexGrowVariants: ('hover', 'active', 'focus');
-$responsiveFlexGrow: $flexGrow;
+// Variants for flex shrink
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$flexShrinkVariants: $defaultVariants;
