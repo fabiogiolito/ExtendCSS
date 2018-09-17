@@ -4,18 +4,15 @@
 // Format: ({key}: {value}, …)
 // Class: .float-{key} { float: {value} }
 $floats: (
-  'right', 'right',
-  'left', 'left',
-  'none', 'none',
+  'right': 'right',
+  'left': 'left',
+  'none': 'none',
 );
 
 // Variants for floats
 // Customize: define new list of variants
 // See config/variants.scss file for details
 $floatVariants: $defaultVariants;
-
-
-
 
 
 // .clearfix::after {

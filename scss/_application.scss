@@ -6,6 +6,9 @@
 
 // $generateClasses: false;
 
+* {
+  box-sizing: border-box;
+}
 
 // ========================================================
 // Configure values
@@ -21,9 +24,9 @@
 @import 'config/spacing';
 @import 'config/shadows';
 @import 'config/display';
-@import 'config/floats';
 @import 'config/overflow';
 @import 'config/position';
+@import 'config/floats';
 
 @import 'config/misc';
 
@@ -81,7 +84,6 @@ $classes: (
 
   // config/borders.scss
   ('border', $borderWidthProperties, $borderWidths, $borderWidthVariants),
-  ('border', $borderWidthProperties, $borderWidths, $borderWidthVariants),
   ('border', 'border-color', $borderColors, $borderColorVariants),
   ('border', 'border-style', $borderStyles, $borderStyleVariants),
   ('rounded', $borderRadiusProperties, $borderRadius, $borderRadiusVariants),
@@ -113,16 +115,14 @@ $classes: (
   ('flex', 'flex', $flexSizes, $flexSizeVariants),
   ('flex', 'flex-grow', $flexGrows, $flexGrowVariants),
   ('flex', 'flex-shrink', $flexShrinks, $flexShrinkVariants),
-  ('', 'Visibility', $visibilities, $visibilityVariants),
+  ('', 'visibility', $visibilities, $visibilityVariants),
 
   // config/misc.scss
   ('z', 'z-index', $zIndexes, $zIndexVariants),
   ('opacity', 'opacity', $opacities, $opacityVariants),
-  // ('fill', 'fill', $svgFills, $svgFillVariants),
-  // ('stroke', 'stroke', $svgStrokes, $svgStrokeVariants),
+  ('fill', 'fill', $svgFills, $svgFillVariants),
+  ('stroke', 'stroke', $svgStrokes, $svgStrokeVariants),
 
-  // config/floats.scss
-  ('float', 'float', $floats, $floatVariants),
 
   // config/overflow.scss
   ('overflow', $overflowProperties, $overflows, $overflowVariants),
@@ -131,6 +131,9 @@ $classes: (
   // config/position.scss
   ('', 'position', $positions, $positionVariants),
   ('pin', $pinsProperties, $pins, ()),
+
+  // config/floats.scss
+  ('float', 'float', $floats, $floatVariants),
 
   // config/.scss
   // ('class', '', '', ()),
