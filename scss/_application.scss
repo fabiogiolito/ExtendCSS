@@ -4,18 +4,15 @@
 @import 'config/_functions';
 
 
-// $generateClasses: false;
-
-* {
-  box-sizing: border-box;
-}
-
 // ========================================================
 // Configure values
 
 @import 'config/responsive';
 @import 'config/variants';
 @import 'config/colors';
+
+@import 'vendors/normalize';
+@import 'config/resets';
 
 @import 'config/backgrounds';
 @import 'config/typography';
@@ -29,6 +26,7 @@
 @import 'config/floats';
 
 @import 'config/misc';
+
 
 // ========================================================
 // Classes to be created
