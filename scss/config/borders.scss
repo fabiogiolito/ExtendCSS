@@ -1,8 +1,13 @@
 
-$borderDefault: '0 solid #{map-get($colors, 'grey-light')}';
 
+$borderDefault: '0 solid #{color('grey-light')}';
+* { border: #{$borderDefault}; }
 
-// Class name: .border{-side?}{-width?}
+// ========================================================
+// Border width classes
+// Format: ({key}: {value}, …)
+// Class: .border-{key} { border-width: {value} }
+// Default holds value for class without width key: .border { … }
 $borderWidths: (
   'default': '1px',
   '0': '0',
@@ -11,40 +16,62 @@ $borderWidths: (
   '8': '8px',
 );
 
-$borderSides: (
-  't': 'top',
-  'r': 'right',
-  'b': 'bottom',
-  'l': 'left',
-  'x': ('left', 'right'),
-  'y': ('top', 'bottom'),
+// Border side modifiers
+// Generate more border width classes
+// Format: ({key}: {value}, …)
+// Class: .border{-key?}{-widthKey?} { {value}: {widthValue} }
+// If {value} is a list will print all variations with same {widthValue}
+// Default holds value for class without modifier key: .border{-widthKey?} { … }
+$borderWidthProperties: (
+  'default': 'border-width',
+  't': 'border-top-width',
+  'r': 'border-right-width',
+  'b': 'border-bottom-width',
+  'l': 'border-left-width',
+  'x': ('border-left-width', 'border-right-width'),
+  'y': ('border-top-width', 'border-bottom-width'),
 );
 
+// Variants for font size
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$borderWidthVariants: ();
 
-// Class name: .border-{color}
-$borderColors: $colors;
 
 // ========================================================
-// State variants border color
-// Class names:
-//    .hover:border-{color}
-//    .focus:border-{color}
-//    .active:border-{color}
-// Default: ('hover', 'active', 'focus')
-// Customize: remove from list unwanted variants
-// Disable: set equal to ();
-$borderColorVariants: ('hover', 'active', 'focus');
+// Border color classes
+// Format: ({key}: {value}, …)
+// Class: .border-{key} { border-color: {value} }
+$borderColors: $colors;
 
-// Class name: .{screen}:border-{color}
-$responsiveBorderColors: $borderColors;
+// Variants for font size
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$borderColorVariants: $defaultVariants;
 
 
-// Class name: .border-{style}
+// ========================================================
+// Border style classes
+// Format: ({key}: {value}, …)
+// Class: .border-{key} { border-style: {value} }
 $borderStyles: (
-'solid', 'dashed', 'dotted', 'none'
+  'solid': 'solid',
+  'dashed': 'dashed',
+  'dotted': 'dotted',
+  'none': 'none',
 );
 
-// Class name: .rounded{-side?}{-size?}
+// Variants for border style
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$borderStyleVariants: ();
+
+
+// ========================================================
+// Border radius classes
+// Format: ({key}: {value}, …)
+// Class: .rounded{-key?} { border-radius: {value} }
+// Default holds value for class without radius key: .rounded { … }
 $borderRadius: (
   'default': '.25rem',
   'none': '0',
@@ -54,13 +81,25 @@ $borderRadius: (
   'full': '9999px',
 );
 
-$borderRadiusSides: (
-  't': ('top-left', 'top-right'),
-  'r': ('top-right', 'bottom-right'),
-  'b': ('bottom-left', 'bottom-right'),
-  'l': ('top-left', 'bottom-right'),
-  'tl': 'top-left',
-  'tr': 'top-right',
-  'br': 'bottom-right',
-  'bl': 'bottom-left',
+// Border radius modifiers
+// Generate more border radius classes
+// Format: ({key}: {value}, …)
+// Class: .rounded{-key?}{-radiusKey?} { {value}: {radiusValue} }
+// If {value} is a list will print all variations with same {radiusValue}
+// Default holds value for class without modifier key: .rounded{-radiusKey?} { … }
+$borderRadiusProperties: (
+  'default': 'border-radius',
+  't': ('border-top-left-radius', 'border-top-right-radius'),
+  'r': ('border-top-right-radius', 'border-bottom-right-radius'),
+  'b': ('border-bottom-left-radius', 'border-bottom-right-radius'),
+  'l': ('border-top-left-radius', 'border-bottom-right-radius'),
+  'tl': 'border-top-left-radius',
+  'tr': 'border-top-right-radius',
+  'br': 'border-bottom-right-radius',
+  'bl': 'border-bottom-left-radius',
 );
+
+// Variants for border radius
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$borderRadiusVariants: ();

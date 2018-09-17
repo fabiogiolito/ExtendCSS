@@ -1,0 +1,14 @@
+// ========================================================
+// Responsive sizes
+// Format: ({key}: {value}, …)
+// Customize:
+//  Comment out options or change values
+//  You can add new values, like: ('max-md', '(max-width: 991px)')
+//  It will be used in variants: .max-md:text-blue
+
+$responsive: (
+  'sm': '(min-width: 576px)',
+  'md': '(min-width: 768px)',
+  'lg': '(min-width: 992px)',
+  'xl': '(min-width: 1200px)',
+);

@@ -1,0 +1,35 @@
+// ========================================================
+// Group hover option
+// Make a variable so it's easier to type in variants
+
+$groupHover: 'group:hover .group-hover';
+
+
+// ========================================================
+// Default variants
+//
+// Format: ({value}, …)
+//   Value can be a CSS selector: 'hover'
+//     Used to generate
+//       .hover:{class}:hover { @content }
+//
+//   Value can be a class structure: 'group:hover .group-hover'
+//     Used to generate
+//       .group:hover .group-hover { @content }
+//
+//   Value can be a list: ('sm': '(min-width: 576px)')
+//     Used to generate
+//       @media (min-width: 576px) { .sm:{class} { @content } }
+
+$defaultVariants: (
+  // 'first-child',
+  // 'last-child',
+  // 'invalid',
+  // 'valid',
+  // 'visited',
+  'hover',
+  'active',
+  'focus',
+  $groupHover, // Define above
+  $responsive, // See config/responsive.scss for details
+);

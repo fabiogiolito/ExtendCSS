@@ -1,0 +1,73 @@
+// ========================================================
+// Screen mixin
+//
+// Usage:
+//   Wrapping class:
+//   @include screen('sm') {
+//     .myClass { … }
+//   }
+//
+//   Wrapping values:
+//   .myClass {
+//     color: red;
+//     @include screen('sm') {
+//       color: blue;
+//     }
+//   }
+//
+// Customizing:
+//   Use different media list:
+//   $customList: ('max-md', '(max-width: 991px)');
+//   @include ('max-md', $customList) { … }
+//
+// Generates: @media {value} { @content; }
+//
+// If you pass an invalid key (not in list) it will ignore it
+// and print the @content without a @media query
+
+@mixin screen($key, $list: $responsive) {
+  @if map-has-key($list, $key) {
+    @media #{map-get($list, $key)} {
+      @content;
+    }
+  } @else { @content; }
+}
+
+// ========================================================
+// Color function
+@function color($key) {
+  @return #{map-get($colors, $key)};
+}
+
+// ========================================================
+// Make mixin
+// TODO: Make mixin explanation
+
+@mixin make($base, $properties, $values, $variants: ()) {
+  $variants: join(('default'), $variants, 'comma');
+  @if type-of($properties) == 'string' {
+    $properties: ('default': $properties);
+  }
+  @each $variant in $variants {
+    @each $sKey, $sValue in $variant {
+      @include screen($sKey) {
+        $classPrepend: if($variant == 'default', '', '#{$sKey}\\:');
+        $classAppend: if($sValue or $sKey == 'default' or str-index($sKey, '.'), '', ':#{$sKey}');
+
+        @each $pKey, $pValue in $properties {
+          $pKey: if($pKey == 'default', '', '-#{$pKey}');
+          @each $key, $value in $values {
+            $key: if($key == 'default', '', '-#{$key}');
+
+            .#{$classPrepend}#{$base}#{$pKey}#{$key}#{$classAppend} {
+              @each $val in $pValue {
+                #{$val}: #{$value};
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

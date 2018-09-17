@@ -1,6 +1,8 @@
-### Misc
+### To Do
 
-  - [ ] Try making responsive part of variants
+  - [x] Make responsive part of variants
+  - [x] Make group-hover part of variants
+  - [x] Refactor class generation into single mixin
 
 
 ### Layout
@@ -18,11 +20,11 @@
 ### Typography
 
   - [x] Color
-  - [ ] Font family
-  - [ ] Font size
-  - [ ] Font weight
-  - [ ] Letter spacing
-  - [ ] Line height
+  - [x] Font family
+  - [x] Font size
+  - [x] Font weight
+  - [x] Letter spacing
+  - [x] Line height
   - [ ] Lists
   - [ ] Style & Decoration
   - [ ] Text alignment
@@ -47,19 +49,19 @@
   - [x] Border Style
   - [x] Border Width
   - [x] Border Radius
-  - [ ] Check: Variants, Responsive, Group-hover
-  - [ ] Check: Helpful comments
+  - [x] Check: Variants, Responsive, Group-hover
+  - [x] Check: Helpful comments
 
 ### Flexbox
 
-  - [x] Display
-  - [x] Flex Direction
-  - [x] Flex Wrapping
-  - [x] Align Items
-  - [x] Align Content
-  - [x] Align Self
-  - [x] Justify Content
-  - [x] Flex Grow, & Shrink
+  - [ ] Display
+  - [ ] Flex Direction
+  - [ ] Flex Wrapping
+  - [ ] Align Items
+  - [ ] Align Content
+  - [ ] Align Self
+  - [ ] Justify Content
+  - [ ] Flex Grow, & Shrink
   - [ ] Check: Variants, Responsive, Group-hover
   - [ ] Check: Helpful comments
 
@@ -68,8 +70,8 @@
   - [x] Padding
   - [x] Margin
   - [x] Negative Margin
-  - [ ] Check: Variants, Responsive, Group-hover
-  - [ ] Check: Helpful comments
+  - [x] Check: Variants, Responsive, Group-hover
+  - [x] Check: Helpful comments
 
 ### Sizing
 
@@ -80,7 +82,7 @@
   - [x] Min-Height
   - [x] Max-Height
   - [x] Check: Variants, Responsive, Group-hover
-  - [ ] Check: Helpful comments
+  - [x] Check: Helpful comments
 
 ### Tables
 
@@ -101,7 +103,7 @@
 ### Miscellaneous
 
   - [ ] Appearance
-  - [ ] Box Shadow
+  - [x] Box Shadow
   - [ ] Opacity
   - [ ] Outline
   - [ ] SVG

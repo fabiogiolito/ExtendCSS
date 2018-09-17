@@ -1,68 +1,104 @@
 
+// ========================================================
 // Mixins and Functions
-@import 'functions/helpers';
-@import 'functions/screen';
-@import 'functions/variants';
+@import 'config/_functions';
 
-// Config variables
-$generateClasses: true;
+
+// $generateClasses: false;
+
+
+// ========================================================
+// Configure values
+
+@import 'config/responsive';
+@import 'config/variants';
 
 @import 'config/colors';
-@import 'config/screens';
 @import 'config/typography';
 @import 'config/borders';
 @import 'config/sizes';
 @import 'config/spacing';
 @import 'config/shadows';
-@import 'config/misc';
-@import 'config/display';
-
-// Generators
-@import 'generators/textColor';
-@import 'generators/backgroundColor';
-@import 'generators/backgroundSize';
-@import 'generators/borders';
-@import 'generators/spacing';
-@import 'generators/flex';
-@import 'generators/sizes';
+// @import 'config/misc';
+// @import 'config/display';
 
 
+// ========================================================
+// Classes to be created
+//
+// Format:
+//  (
+//   ( $class, $properties, $values, $variants ),
+//   …
+// )
+//
+// $class: String with base class name. Eg: 'text' => .text{-$value?}
+// $properties:
+//   1. String:
+//     CSS property being modified.
+//     Eg: 'color' => { color: red; }
+//   2. List:
+//     Class modifier, CSS property.
+//     Eg: ('t', 'border-top') => .border-t-0 { border-top: 0; }
+//
+// Customize:
+//   You can comment out lines with classes you don't need
+//   To change values or variations, check the config file for that class
+//
+// Used to generate classes:
+//   .{variantPrepend:?}{class}{-property?}{-value?}{:variantAppend?}
+//   See config/_functions.scss to understand the class structure
+//   See config/variants.scss for more info on variants
 
-// ======================================
-// Test @extend and @include
+$classes: (
 
-.extendedButton {
-  @extend %bg-transparent;
-  @extend %hover\:bg-blue;
-  @extend %text-blue-dark;
-  // @extend %font-semibold;
-  @extend %hover\:text-white;
-  @extend %active\:text-white;
-  @extend %py-2;
-  @extend %px-4;
-  @extend %border;
-  @extend %border-blue;
-  @extend %hover\:border-transparent;
-  @extend %rounded;
-  // @extend %focus\:outline-none;
-  // @extend %focus\:shadow-outline;
-  @extend %active\:bg-blue-dark;
-}
+  // config/colors.scss
+  ('text', 'color', $textColors, $textColorVariants),
+  ('bg', 'background-color', $backgroundColors, $backgroundColorVariants),
+  ('bg', 'background-size', $backgroundSizes, $backgroundSizeVariants),
 
-.includedButton {
-  @include backgroundColor('transparent');
-  @include backgroundColor('blue', 'hover');
-  @include textColor('blue-dark');
-  // @include .font-semibold;
-  @include textColor('white', 'hover');
-  @include textColor('white', 'active');
-  @include padding('2', 'y');
-  @include padding('4', 'x');
-  @include border;
-  @include borderColor('blue');
-  @include borderColor('transparent', 'hover');
-  @include borderRadius;
-  // @include .focus\:outline-none;
-  // @include .focus\:shadow-outline;
-  @include backgroundColor('blue-dark', 'active');
+  // config/typography.scss
+  ('font', 'font-family', $fonts, $fontFamilyVariants),
+  ('text', 'font-size', $textSizes, $fontSizeVariants),
+  ('font', 'font-weight', $fontWeights, $fontWeightVariants),
+  ('leading', 'line-height', $leading, $leadingVariants),
+  ('tracking', 'letter-spacing', $tracking, $trackingVariants),
+
+  // config/borders.scss
+  ('border', $borderWidthProperties, $borderWidths, $borderWidthVariants),
+  ('border', $borderWidthProperties, $borderWidths, $borderWidthVariants),
+  ('border', 'border-color', $borderColors, $borderColorVariants),
+  ('border', 'border-style', $borderStyles, $borderStyleVariants),
+  ('rounded', $borderRadiusProperties, $borderRadius, $borderRadiusVariants),
+
+  // config/sizes.scss
+  ('w', 'width', $widths, $widthVariants),
+  ('min-w', 'min-width', $minWidths, $minWidthVariants),
+  ('max-w', 'max-width', $maxWidths, $maxWidthVariants),
+  ('h', 'height', $heights, $heightVariants),
+  ('min-h', 'min-height', $minHeights, $minHeightVariants),
+  ('max-h', 'max-height', $maxHeights, $maxHeightVariants),
+
+  // config/spacing.scss
+  ('p', $paddingProperties, $paddings, $paddingVariants),
+  ('m', $marginProperties, $margins, $marginVariants),
+  ('-m', $negativeMarginProperties, $negativeMargins, $negativeMarginVariants),
+
+  // config/shadows.scss
+  ('shadow', 'box-shadow', $shadows, $shadowVariants),
+
+  // config/.scss
+  // ('class', '', '', ()),
+
+  // config/.scss
+  // ('class', '', '', ()),
+);
+
+
+// ========================================================
+// Loop through classes defined above and generate them
+// See config/_functions.scss for info on the 'make' mixin
+
+@each $class in $classes {
+  @include make($class...);
 }

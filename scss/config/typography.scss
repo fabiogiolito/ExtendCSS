@@ -1,11 +1,23 @@
-// Class name: .font-{name}
+// ========================================================
+// Font family classes
+// Format: ({key}: {value}, …)
+// Class: .font-{key} { font-family: {value} }
 $fonts: (
   'sans': "'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'",
   'serif': "'Constantia', 'Lucida Bright', 'Lucidabright', 'Lucida Serif', 'Lucida', 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', 'Georgia', 'serif'",
   'mono':  "'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'"
 );
 
-// Class name: .text-{size}
+// Variants for font family
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$fontFamilyVariants: ();
+
+
+// ========================================================
+// Text size classes
+// Format: ({key}: {value}, …)
+// Class: .text-{key} { font-size: {value} }
 $textSizes: (
   'xs': '.75rem',     // 12px
   'sm': '.875rem',    // 14px
@@ -18,7 +30,16 @@ $textSizes: (
   '5xl': '3rem',      // 48px
 );
 
-// Class name: .font-{weight}
+// Variants for font size
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$fontSizeVariants: $defaultVariants;
+
+
+// ========================================================
+// Font weight classes
+// Format: ({key}: {value}, …)
+// Class: .font-{key} { font-weight: {value} }
 $fontWeights: (
   'hairline': 100,
   'thin': 200,
@@ -31,8 +52,16 @@ $fontWeights: (
   'black': 900,
 );
 
-// Line height
-// Class name: .leading-{size}
+// Variants for font weight
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$fontWeightVariants: $defaultVariants;
+
+
+// ========================================================
+// Leading classes (line-height)
+// Format: ({key}: {value}, …)
+// Class: .leading-{key} { line-height: {value} }
 $leading: (
   'none': 1,
   'tight': 1.25,
@@ -40,10 +69,23 @@ $leading: (
   'loose': 2,
 );
 
-// Letter spacing
-// Class name: .tracking-{size}
+// Variants for text leading (line-height)
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$leadingVariants: $defaultVariants;
+
+
+// ========================================================
+// Tracking classes (letter-spacing)
+// Format: ({key}: {value}, …)
+// Class: .tracking-{key} { letter-spacing: {value} }
 $tracking: (
   'tight': '-0.05em',
   'normal': '0',
   'wide': '0.05em',
 );
+
+// Variants for text tracking (letter-spacing)
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$trackingVariants: $defaultVariants;
