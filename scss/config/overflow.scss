@@ -1,0 +1,42 @@
+// ========================================================
+// Overflow classes
+// Format: ({key}: {value}, …)
+// Class: .overflow-{key} { overflow: {value} }
+$overflows: (
+  'auto': 'auto',
+  'hidden': 'hidden',
+  'visible': 'visible',
+  'scroll': 'scroll',
+);
+
+// Overflow direction modifiers
+// Generate more border width classes
+// Format: ({key}: {value}, …)
+// Class: .overflow{-direction?}-{typeKey} { {value}: {typeValue} }
+// If {value} is a list will print all variations with same {widthValue}
+// Default holds value for class without modifier key: .border{-widthKey?} { … }
+$overflowProperties: (
+  'default': 'overflow',
+  'x': 'overflow-x',
+  'y': 'overflow-y',
+);
+
+// Variants for overflow
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$overflowVariants: $defaultVariants;
+
+
+// ========================================================
+// Scrolling classes
+// Format: ({key}: {value}, …)
+// Class: .scrolling-{key} { -webkit-overflow-scrolling: {value} }
+$scrollings: (
+  'auto': 'auto',
+  'touch': 'touch',
+);
+
+// Variants for scrolling
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$scrollingVariants: ();

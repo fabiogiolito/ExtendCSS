@@ -1,0 +1,55 @@
+
+// ========================================================
+// Position classes
+// Format: ({key}: {value}, …)
+// Class: .{key} { display: {value} }
+// Notice there's no base class, base is '' (empty string)
+// so we get .fixed instead of .position-fixed
+
+$positions: (
+  'static': 'static',
+  'fixed': 'fixed',
+  'absolute': 'absolute',
+  'relative': 'relative',
+  'sticky': 'sticky',
+);
+
+// Variants for display
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$positionVariants: $defaultVariants;
+
+
+// ========================================================
+// Pin position classes
+// Format: ({key}: {value}, …)
+// Class: .pin{-key?} { display: {value} }
+// Default holds value for class without modifier key: .pin { … }
+$pins: (
+  'default': '0',
+);
+
+// Overflow direction modifiers
+// Generate more border width classes
+// Format: ({key}: {value}, …)
+// Class: .overflow{-direction?}-{typeKey} { {value}: {typeValue} }
+// If {value} is a list will print all variations with same {widthValue}
+// Default holds value for class without modifier key: .border{-widthKey?} { … }
+$pinsProperties: (
+  'default': ('top', 'right', 'bottom', 'left'),
+  't': 'top',
+  'r': 'right',
+  'b': 'bottom',
+  'l': 'left',
+  'y': ('top', 'bottom'),
+  'x': ('right', 'left'),
+  'tr': ('top', 'right'),
+  'tl': ('top', 'left'),
+  'br': ('bottom', 'right'),
+  'bl': ('bottom', 'left'),
+);
+
+// Variants for display
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$pinVariants: $defaultVariants;

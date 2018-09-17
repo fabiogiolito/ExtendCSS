@@ -1,0 +1,83 @@
+
+// ========================================================
+// Background color classes
+// Format: ({key}: {value}, …)
+// Class: .bg-{key} { background-color: {value} }
+// Default: $colors
+$backgroundColors: $colors;
+
+// Variants for background color
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$backgroundColorVariants: $defaultVariants;
+
+
+// ========================================================
+// Background size classes
+// Format: ({key}: {value}, …)
+// Class: .bg-{key} { background-size: {value} }
+$backgroundSizes: (
+  'auto': 'auto',
+  'cover': 'cover',
+  'contain': 'contain',
+);
+
+// Variants for background size
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$backgroundSizeVariants: $defaultVariants;
+
+
+// ========================================================
+// Background attachment classes
+// Format: ({key}: {value}, …)
+// Class: .bg-{key} { background-attachment: {value} }
+$backgroundAttachments: (
+  'fixed': 'fixed',
+  'local': 'local',
+  'scroll': 'scroll',
+);
+
+// Variants for background attachment
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$backgroundAttachmentVariants: $defaultVariants;
+
+
+// ========================================================
+// Background position classes
+// Format: ({key}: {value}, …)
+// Class: .bg-{key} { background-position: {value} }
+$backgroundPositions: (
+  'bottom': 'bottom',
+  'center': 'center',
+  'left': 'left',
+  'left-bottom': 'left bottom',
+  'left-top': 'left top',
+  'right': 'right',
+  'right-bottom': 'right bottom',
+  'right-top': 'right top',
+  'top': 'top',
+);
+
+// Variants for background position
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$backgroundPositionVariants: $defaultVariants;
+
+
+// ========================================================
+// Background repeat classes
+// Format: ({key}: {value}, …)
+// Class: .bg-{key} { background-repeat: {value} }
+$backgroundRepeats: (
+  'repeat': 'repeat',
+  'no-repeat': 'no-repeat',
+  'repeat-x': 'repeat-x',
+  'repeat-y': 'repeat-y',
+);
+
+// Variants for background repeat
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$backgroundRepeatVariants: $defaultVariants;

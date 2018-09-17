@@ -1,3 +1,17 @@
+
+// ========================================================
+// Text color classes
+// Format: ({key}: {value}, …)
+// Class: .text-{key} { color: {value} }
+// Default: $colors
+$textColors: $colors;
+
+// Variants for text color
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textColorVariants: $defaultVariants;
+
+
 // ========================================================
 // Font family classes
 // Format: ({key}: {value}, …)
@@ -89,3 +103,150 @@ $tracking: (
 // Customize: define new list of variants
 // See config/variants.scss file for details
 $trackingVariants: $defaultVariants;
+
+
+// ========================================================
+// Text style classes
+// Format: ({key}: {value}, …)
+// Class: .{key} { font-style: {value} }
+$textStyles: (
+  'italic': 'italic',
+  'roman': 'normal',
+);
+
+// Variants for text style
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textStyleVariants: $defaultVariants;
+
+
+// ========================================================
+// Text transform classes
+// Format: ({key}: {value}, …)
+// Class: .{key} { text-transform: {value} }
+$textTransforms: (
+  'uppercase': 'uppsercase',
+  'lowercase': 'lowercase',
+  'capitalize': 'capitalize',
+  'normal-case': 'none',
+);
+
+// Variants for text style
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textTransformVariants: $defaultVariants;
+
+
+// ========================================================
+// Text decoration classes
+// Format: ({key}: {value}, …)
+// Class: .{key} { text-decoration: {value} }
+$textDecorations: (
+  'underline': 'underline',
+  'line-through': 'line-through',
+  'no-underline': 'none',
+);
+
+// Variants for text decoration
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textDecorationVariants: $defaultVariants;
+
+
+// ========================================================
+// font smoothing classes (text antialias)
+// Format: ({key}: {value}, …)
+// Class: .{key} { font-smoothing: {value} }
+$fontSmoothings: (
+  'antialiased': 'antialiased',
+  'subpixel-antialiased': 'auto',
+);
+
+// Variants for font smoothing
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$fontSmoothingVariants: $defaultVariants;
+
+
+// ========================================================
+// Text align classes
+// Format: ({key}: {value}, …)
+// Class: .text-{key} { text-align: {value} }
+$textAligns: (
+  'left': 'left',
+  'center': 'center',
+  'right': 'right',
+  'justify': 'justify',
+);
+
+// Variants for text align
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textAlignVariants: $defaultVariants;
+
+
+// ========================================================
+// font smoothing classes (text antialias)
+// Format: ({key}: {value}, …)
+// Class: .{key} { font-smoothing: {value} }
+$fontSmoothings: (
+  'antialiased': 'antialiased',
+  'subpixel-antialiased': 'auto',
+);
+
+// Variants for font smoothing
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$fontSmoothingVariants: $defaultVariants;
+
+
+// ========================================================
+// Text vertical align classes
+// Format: ({key}: {value}, …)
+// Class: .align-{key} { text-align: {value} }
+$textVerticalAligns: (
+  'baseline': 'baseline',
+  'top': 'top',
+  'middle': 'middle',
+  'bottom': 'bottom',
+  'text-top': 'text-top',
+  'text-bottom': 'text-bottom',
+);
+
+// Variants for text vertical align
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textVerticalAlignVariants: $defaultVariants;
+
+
+// ========================================================
+// Text whitespace align classes
+// Format: ({key}: {value}, …)
+// Class: .whitespace-{key} { text-align: {value} }
+$whiteSpaces: (
+  'normal': 'normal',
+  'no-wrap': 'nowrap',
+  'pre': 'pre',
+  'pre-line': 'pre-line',
+  'pre-wrap': 'pre-wrap',
+);
+
+// Variants for text whitespace
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$whiteSpaceVariants: $defaultVariants;
+
+
+// ========================================================
+// Text break classes
+// Format: ({key}: {value}, …)
+// Class: .break-{key} { word-wrap: {value} }
+$textBreaks: (
+  'words': 'break-words',
+  'normal': 'normal',
+);
+
+// Variants for text break
+// Customize: define new list of variants
+// See config/variants.scss file for details
+$textBreakVariants: $defaultVariants;

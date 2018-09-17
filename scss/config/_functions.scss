@@ -49,10 +49,10 @@
     $properties: ('default': $properties);
   }
   @each $variant in $variants {
-    @each $sKey, $sValue in $variant {
-      @include screen($sKey) {
-        $classPrepend: if($variant == 'default', '', '#{$sKey}\\:');
-        $classAppend: if($sValue or $sKey == 'default' or str-index($sKey, '.'), '', ':#{$sKey}');
+    @each $vKey, $vValue in $variant {
+      @include screen($vKey) {
+        $classPrepend: if($variant == 'default', '', '#{$vKey}\\:');
+        $classAppend: if($vValue or $vKey == 'default' or str-index($vKey, '.'), '', ':#{$vKey}');
 
         @each $pKey, $pValue in $properties {
           $pKey: if($pKey == 'default', '', '-#{$pKey}');

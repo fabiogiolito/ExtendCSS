@@ -8,12 +8,13 @@
 ### Layout
 
   - [ ] Container
-  - [ ] Display
-  - [ ] Floats
-  - [ ] Overflow
-  - [ ] Position
-  - [ ] Visibility
-  - [ ] Z-index
+  - [x] Display
+  - [x] Floats
+  - [ ] Clearfix
+  - [x] Overflow
+  - [x] Position
+  - [x] Visibility
+  - [x] Z-index
   - [ ] Check: Variants, Responsive, Group-hover
   - [ ] Check: Helpful comments
 
@@ -26,19 +27,20 @@
   - [x] Letter spacing
   - [x] Line height
   - [ ] Lists
-  - [ ] Style & Decoration
-  - [ ] Text alignment
-  - [ ] Vertical alignment
-  - [ ] Whitespace & Wrapping
+  - [x] Style & Decoration
+  - [x] Text alignment
+  - [x] Vertical alignment
+  - [x] Whitespace & Wrapping
+  - [ ] Truncate
   - [ ] Check: Variants, Responsive, Group-hover
   - [ ] Check: Helpful comments
 
 ### Backgrounds
 
-  - [ ] Background Attachment
+  - [x] Background Attachment
   - [x] Background Color
-  - [ ] Background Position
-  - [ ] Background Repeat
+  - [x] Background Position
+  - [x] Background Repeat
   - [x] Background Size
   - [ ] Check: Variants, Responsive, Group-hover
   - [ ] Check: Helpful comments
@@ -54,16 +56,16 @@
 
 ### Flexbox
 
-  - [ ] Display
-  - [ ] Flex Direction
-  - [ ] Flex Wrapping
-  - [ ] Align Items
-  - [ ] Align Content
-  - [ ] Align Self
-  - [ ] Justify Content
-  - [ ] Flex Grow, & Shrink
-  - [ ] Check: Variants, Responsive, Group-hover
-  - [ ] Check: Helpful comments
+  - [x] Display
+  - [x] Flex Direction
+  - [x] Flex Wrapping
+  - [x] Align Items
+  - [x] Align Content
+  - [x] Align Self
+  - [x] Justify Content
+  - [x] Flex Grow, & Shrink
+  - [x] Check: Variants, Responsive, Group-hover
+  - [x] Check: Helpful comments
 
 ### Spacing
 
@@ -104,8 +106,8 @@
 
   - [ ] Appearance
   - [x] Box Shadow
-  - [ ] Opacity
+  - [x] Opacity
   - [ ] Outline
-  - [ ] SVG
+  - [x] SVG
   - [ ] Check: Variants, Responsive, Group-hover
   - [ ] Check: Helpful comments

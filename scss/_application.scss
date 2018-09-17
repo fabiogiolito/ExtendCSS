@@ -12,16 +12,20 @@
 
 @import 'config/responsive';
 @import 'config/variants';
-
 @import 'config/colors';
+
+@import 'config/backgrounds';
 @import 'config/typography';
 @import 'config/borders';
 @import 'config/sizes';
 @import 'config/spacing';
 @import 'config/shadows';
 @import 'config/display';
-@import 'config/misc';
+@import 'config/floats';
+@import 'config/overflow';
+@import 'config/position';
 
+@import 'config/misc';
 
 // ========================================================
 // Classes to be created
@@ -52,17 +56,28 @@
 
 $classes: (
 
-  // config/colors.scss
-  ('text', 'color', $textColors, $textColorVariants),
+  // config/backgrounds.scss
   ('bg', 'background-color', $backgroundColors, $backgroundColorVariants),
   ('bg', 'background-size', $backgroundSizes, $backgroundSizeVariants),
+  ('bg', 'background-attachment', $backgroundAttachments, $backgroundAttachmentVariants),
+  ('bg', 'background-position', $backgroundPositions, $backgroundPositionVariants),
+  ('bg', 'background-repeat', $backgroundRepeats, $backgroundRepeatVariants),
 
   // config/typography.scss
+  ('text', 'color', $textColors, $textColorVariants),
   ('font', 'font-family', $fonts, $fontFamilyVariants),
   ('text', 'font-size', $textSizes, $fontSizeVariants),
   ('font', 'font-weight', $fontWeights, $fontWeightVariants),
   ('leading', 'line-height', $leading, $leadingVariants),
   ('tracking', 'letter-spacing', $tracking, $trackingVariants),
+  ('', 'font-style', $textStyles, $textStyleVariants),
+  ('', 'text-transform', $textTransforms, $textTransformVariants),
+  ('', 'text-decoration', $textDecorations, $textDecorationVariants),
+  ('', 'font-smoothing', $fontSmoothings, $fontSmoothingVariants),
+  ('text', 'text-align', $textAligns, $textAlignVariants),
+  ('align', 'vertical-align', $textVerticalAligns, $textVerticalAlignVariants),
+  ('whitespace', 'white-space', $whiteSpaces, $whiteSpaceVariants),
+  ('break', 'word-wrap', $textBreaks, $textBreakVariants),
 
   // config/borders.scss
   ('border', $borderWidthProperties, $borderWidths, $borderWidthVariants),
@@ -98,12 +113,24 @@ $classes: (
   ('flex', 'flex', $flexSizes, $flexSizeVariants),
   ('flex', 'flex-grow', $flexGrows, $flexGrowVariants),
   ('flex', 'flex-shrink', $flexShrinks, $flexShrinkVariants),
+  ('', 'Visibility', $visibilities, $visibilityVariants),
 
   // config/misc.scss
   ('z', 'z-index', $zIndexes, $zIndexVariants),
   ('opacity', 'opacity', $opacities, $opacityVariants),
   // ('fill', 'fill', $svgFills, $svgFillVariants),
   // ('stroke', 'stroke', $svgStrokes, $svgStrokeVariants),
+
+  // config/floats.scss
+  ('float', 'float', $floats, $floatVariants),
+
+  // config/overflow.scss
+  ('overflow', $overflowProperties, $overflows, $overflowVariants),
+  ('scrolling', '-webkit-overflow-scrolling', $scrollings, $scrollingVariants),
+
+  // config/position.scss
+  ('', 'position', $positions, $positionVariants),
+  ('pin', $pinsProperties, $pins, ()),
 
   // config/.scss
   // ('class', '', '', ()),
