@@ -1,7 +1,17 @@
+// ========================================================
+// Vendors
+@import 'vendors/normalize';
+
 
 // ========================================================
 // Mixins and Functions
 @import 'config/_functions';
+
+// This is IMPORTANT
+// Set this if you want to generate the utility classes
+// If false you only get placeholders for extension, like %bg-blue
+// If true you get classes, like .bg-blue, in addition to placeholders
+$generateClasses: true;
 
 
 // ========================================================
@@ -11,7 +21,6 @@
 @import 'config/variants';
 @import 'config/colors';
 
-@import 'vendors/normalize';
 @import 'config/resets';
 
 @import 'config/backgrounds';
@@ -144,4 +153,16 @@ $classes: (
 
 @each $class in $classes {
   @include make($class...);
+}
+
+
+
+
+// ========================================================
+// Sample CSS
+
+.btn {
+  @extend %rounded, %font-medium, %p-y-2, %p-x-4, %bg-white, %text-grey-darker, %shadow-md, %border;
+  &:hover { @extend %shadow-lg; }
+  &:active { @extend %bg-grey-lighter; }
 }

@@ -1,4 +1,6 @@
 * {
   transition: all ease 300ms;
-  border: 0 solid #{color('grey-light')};
+  border-width: 0px;
+  border-style: solid;
+  border-color: #{color('grey-light')};
 }

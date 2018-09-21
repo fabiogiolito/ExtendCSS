@@ -58,10 +58,13 @@
           $pKey: if($pKey == 'default', '', '-#{$pKey}');
           @each $key, $value in $values {
             $key: if($key == 'default', '', if($base == '', '#{$key}', '-#{$key}'));
-
-            .#{$classPrepend}#{$base}#{$pKey}#{$key}#{$classAppend} {
-              @each $val in $pValue {
-                #{$val}: #{$value};
+            $classType: if($generateClasses, ('%', '.'), ('%'));
+            
+            @each $type in $classType {
+              #{$type}#{$classPrepend}#{$base}#{$pKey}#{$key}#{$classAppend} {
+                @each $val in $pValue {
+                  #{$val}: #{$value};
+                }
               }
             }
 
