@@ -162,7 +162,6 @@ $classes: (
 // Sample CSS
 
 .btn {
-  @extend %rounded, %font-medium, %p-y-2, %p-x-4, %bg-white, %text-grey-darker, %shadow-md, %border;
-  &:hover { @extend %shadow-lg; }
-  &:active { @extend %bg-grey-lighter; }
+  @extend %bg-blue, %p-y-2, %p-x-4, %rounded, %text-white, %hover\:bg-blue-darker;
+  @include screen(xs) { @extend %block; }
 }
