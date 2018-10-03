@@ -28,8 +28,7 @@ ExtendCSS also generates placeholder `%` classes that you can `@extend` to creat
 
 ```scss
 .btn {
-    @extend %bg-blue, %text-white, %p-y-2, %p-x-4, 
-        %rounded, %hover\:bg-blue-darker;
+    @extend %bg-blue, %text-white, %p-y-2, %p-x-4, %rounded, %hover\:bg-blue-darker;
 }
 ```
 ```html
@@ -172,8 +171,9 @@ make($base, $properties, $values, $variants);
     ```html
     <div class="group border p-4 hover:bg-blue">
         <p class="group-hover:text-white">Some text</p>
-        <button class="bg-blue text-white 
-            group-hover:bg-white group-hover:text-blue">Click me</button>
+        <button class="bg-blue text-white group-hover:bg-white group-hover:text-blue">
+            Click me
+        </button>
     </div>
     ```
 
