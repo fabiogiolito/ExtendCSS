@@ -1,10 +1,10 @@
 # ExtendCSS
 
+An _experimental_ Utility CSS framework that pushes the limits of SASS to write CSS classes **programatically**.
+
 > Still in development
 
-This is an _experimental_ CSS framework made to test and push the limits of SASS to create a **programatic utility CSS framework**.
-
-It is inspired by [Tailwind CSS](https://tailwindcss.com), but is created directly on SCSS, without Javascript or another language envolved.
+Inspired by [Tailwind CSS](https://tailwindcss.com), but made purely with SCSS, without Javascript or any other language.
 
 
 ## What is a Utility CSS Framework?
